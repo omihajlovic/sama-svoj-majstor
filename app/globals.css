@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  border-radius: 0 !important;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-outfit), system-ui, sans-serif;
+  font-weight: 300;
+  color: #111111;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  .border-hairline {
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+  }
+  .border-hairline-top {
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+  }
+  .border-hairline-bottom {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+  }
+  .border-hairline-left {
+    border-left: 0.5px solid rgba(0, 0, 0, 0.1);
+  }
+  .border-hairline-right {
+    border-right: 0.5px solid rgba(0, 0, 0, 0.1);
+  }
+  .border-hairline-white {
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
+  }
+  .border-hairline-white-top {
+    border-top: 0.5px solid rgba(255, 255, 255, 0.1);
+  }
+  .font-light-300 {
+    font-weight: 300;
+  }
+  .btn-primary {
+    @apply inline-block px-8 py-4 bg-[#111111] text-white font-outfit font-light text-[13px] tracking-[0.08em] transition-all duration-300;
+  }
+  .btn-primary:hover {
+    @apply bg-white text-[#111111];
+    outline: 0.5px solid #111111;
+  }
+  .btn-outline {
+    @apply inline-block px-8 py-4 bg-transparent text-[#111111] font-outfit font-light text-[13px] tracking-[0.08em] transition-all duration-300;
+    border: 0.5px solid #111111;
+  }
+  .btn-outline:hover {
+    @apply bg-[#111111] text-white;
+  }
+  .btn-outline-white {
+    @apply inline-block px-8 py-4 bg-transparent text-white font-outfit font-light text-[13px] tracking-[0.08em] transition-all duration-300;
+    border: 0.5px solid rgba(255, 255, 255, 0.7);
+  }
+  .btn-outline-white:hover {
+    @apply bg-white text-[#111111];
+  }
+  .container-main {
+    @apply max-w-[1440px] mx-auto px-16;
+  }
+  .link-underline {
+    @apply relative inline-block font-outfit font-light text-[13px] text-[#111111] transition-opacity duration-300;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .link-underline:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 768px) {
+  @layer utilities {
+    .container-main {
+      @apply px-6;
+    }
+  }
+}
