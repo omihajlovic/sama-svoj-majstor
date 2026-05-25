@@ -3,9 +3,9 @@ export default function About() {
     <section className="py-28" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-[1440px] mx-auto px-16">
         {/* Top: tag above heading, both left-aligned */}
-        <div className="mb-16" style={{ paddingLeft: '160px' }}>
+        <div className="mb-16">
           <p
-            className="font-outfit text-[12px] text-[#999999] mb-4"
+            className="font-outfit text-[12px] text-[#999999] mb-2"
             style={{ fontWeight: 300 }}
           >
             / O meni
@@ -23,7 +23,7 @@ export default function About() {
         {/* Mid: two paragraphs flush with heading */}
         <div
           className="grid mb-20"
-          style={{ paddingLeft: '160px', gridTemplateColumns: '1fr 1fr', gap: '4rem' }}
+          style={{ gridTemplateColumns: '1fr 1fr', gap: '4rem' }}
         >
           <p
             className="font-outfit text-[#666666]"
