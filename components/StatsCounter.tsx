@@ -3,122 +3,57 @@
 import { useEffect, useRef, useState } from 'react'
 
 const stats = [
-  {
-    target: 48,
-    label: 'Zadovoljnih klijenata',
-    desc: 'Svaki klijent je nova priča i novo rešenje prilagođeno upravo njemu.',
-  },
-  {
-    target: 60,
-    label: 'Završenih projekata',
-    desc: 'Od malih stanova do kompleksnih komercijalnih prostora.',
-  },
-  {
-    target: 7,
-    label: 'Godina iskustva',
-    desc: 'Znanje stečeno kroz praksu, greške i stalne edukacije.',
-  },
+  { number: 48, suffix: '+', label: 'Zadovoljnih klijenata', description: 'Svaki klijent je nova priča i novo rešenje prilagođeno upravo njemu.' },
+  { number: 60, suffix: '+', label: 'Završenih projekata', description: 'Od malih stanova do kompleksnih komercijalnih prostora.' },
+  { number: 7, suffix: '+', label: 'Godina iskustva', description: 'Znanje stečeno kroz praksu, greške i stalne edukacije.' },
 ]
 
-// Individual counter — rAF loop with ease-out cubic
-function Counter({ target, started }: { target: number; started: boolean }) {
-  const [value, setValue] = useState(0)
-  const rafRef = useRef<number | null>(null)
-  const startRef = useRef<number | null>(null)
+function Counter({ target }: { target: number }) {
+  const [count, setCount] = useState(0)
+  const ref = useRef<HTMLSpanElement>(null)
+  const animated = useRef(false)
 
   useEffect(() => {
-    if (!started) return
-
-    // Always reset so that strict-mode double-invoke (and any re-run) starts fresh
-    startRef.current = null
-    if (rafRef.current !== null) {
-      cancelAnimationFrame(rafRef.current)
-      rafRef.current = null
-    }
-
-    const DURATION = 2000 // ms
-    // ease-out cubic: starts fast, decelerates smoothly
-    const easeOut = (t: number) => 1 - Math.pow(1 - t, 3)
-
-    const tick = (timestamp: number) => {
-      if (startRef.current === null) startRef.current = timestamp
-      const progress = Math.min((timestamp - startRef.current) / DURATION, 1)
-      setValue(Math.round(easeOut(progress) * target))
-      if (progress < 1) {
-        rafRef.current = requestAnimationFrame(tick)
-      } else {
-        rafRef.current = null
-      }
-    }
-
-    rafRef.current = requestAnimationFrame(tick)
-
-    return () => {
-      if (rafRef.current !== null) {
-        cancelAnimationFrame(rafRef.current)
-        rafRef.current = null
-      }
-      startRef.current = null
-    }
-  }, [started, target])
-
-  return <>{value}</>
-}
-
-// Outer component — observes viewport entry once, then fires all counters
-export default function StatsCounter() {
-  const [started, setStarted] = useState(false)
-  const wrapperRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const el = wrapperRef.current
+    const el = ref.current
     if (!el) return
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setStarted(true)
-          observer.disconnect() // fire once, never again
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !animated.current) {
+        animated.current = true
+        const duration = 2000
+        const start = performance.now()
+
+        const tick = (now: number) => {
+          const elapsed = now - start
+          const progress = Math.min(elapsed / duration, 1)
+          const eased = 1 - Math.pow(1 - progress, 3)
+          setCount(Math.floor(eased * target))
+          if (progress < 1) requestAnimationFrame(tick)
+          else setCount(target)
         }
-      },
-      { threshold: 0 }
-    )
+
+        requestAnimationFrame(tick)
+        observer.disconnect()
+      }
+    }, { threshold: 0 })
 
     observer.observe(el)
     return () => observer.disconnect()
-  }, [])
+  }, [target])
 
+  return <span ref={ref}>{count}</span>
+}
+
+export default function StatsCounter() {
   return (
-    <div
-      ref={wrapperRef}
-      className="grid grid-cols-3"
-      style={{ borderTop: '0.5px solid rgba(0,0,0,0.1)' }}
-    >
-      {stats.map((stat, i) => (
-        <div
-          key={i}
-          className="py-10 px-8"
-          style={{ borderLeft: i > 0 ? '0.5px solid rgba(0,0,0,0.1)' : 'none' }}
-        >
-          {/* "+" is static text — visible immediately, never animated */}
-          <p
-            className="font-cormorant text-[#111111] mb-2"
-            style={{ fontWeight: 300, fontSize: '56px', lineHeight: 1 }}
-          >
-            <Counter target={stat.target} started={started} />+
-          </p>
-          <p
-            className="font-outfit text-[13px] text-[#111111] mb-2"
-            style={{ fontWeight: 400 }}
-          >
-            {stat.label}
-          </p>
-          <p
-            className="font-outfit text-[#888888]"
-            style={{ fontWeight: 300, fontSize: '15px' }}
-          >
-            {stat.desc}
-          </p>
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', borderTop: '0.5px solid rgba(0,0,0,0.1)' }}>
+      {stats.map((stat) => (
+        <div key={stat.label} style={{ padding: '2.5rem 0', borderRight: '0.5px solid rgba(0,0,0,0.1)' }}>
+          <div style={{ fontSize: '56px', fontFamily: 'var(--font-lora)', fontWeight: 300, lineHeight: 1 }}>
+            <Counter target={stat.number} />{stat.suffix}
+          </div>
+          <div style={{ fontSize: '13px', fontWeight: 400, marginTop: '1rem', marginBottom: '0.5rem' }}>{stat.label}</div>
+          <div style={{ fontSize: '15px', fontWeight: 300, color: '#888', lineHeight: 1.7 }}>{stat.description}</div>
         </div>
       ))}
     </div>
