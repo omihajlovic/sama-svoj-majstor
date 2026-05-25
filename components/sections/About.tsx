@@ -1,3 +1,5 @@
+import StatsCounter from '@/components/StatsCounter'
+
 export default function About() {
   return (
     <section className="py-24" style={{ backgroundColor: '#ffffff' }}>
@@ -39,56 +41,8 @@ export default function About() {
           </p>
         </div>
 
-        {/* Stats */}
-        <div
-          className="grid grid-cols-3"
-          style={{ borderTop: '0.5px solid rgba(0,0,0,0.1)' }}
-        >
-          {[
-            {
-              number: '48+',
-              label: 'Zadovoljnih klijenata',
-              desc: 'Svaki klijent je nova priča i novo rešenje prilagođeno upravo njemu.',
-            },
-            {
-              number: '60+',
-              label: 'Završenih projekata',
-              desc: 'Od malih stanova do kompleksnih komercijalnih prostora.',
-            },
-            {
-              number: '7+',
-              label: 'Godina iskustva',
-              desc: 'Znanje stečeno kroz praksu, greške i stalne edukacije.',
-            },
-          ].map((stat, i) => (
-            <div
-              key={i}
-              className="py-10 px-8"
-              style={{
-                borderLeft: i > 0 ? '0.5px solid rgba(0,0,0,0.1)' : 'none',
-              }}
-            >
-              <p
-                className="font-cormorant text-[#111111] mb-2"
-                style={{ fontWeight: 300, fontSize: '56px', lineHeight: 1 }}
-              >
-                {stat.number}
-              </p>
-              <p
-                className="font-outfit text-[13px] text-[#111111] mb-2"
-                style={{ fontWeight: 400 }}
-              >
-                {stat.label}
-              </p>
-              <p
-                className="font-outfit text-[#888888]"
-                style={{ fontWeight: 300, fontSize: '15px' }}
-              >
-                {stat.desc}
-              </p>
-            </div>
-          ))}
-        </div>
+        {/* Stats — animated counter, triggers once on viewport entry */}
+        <StatsCounter />
       </div>
     </section>
   )
