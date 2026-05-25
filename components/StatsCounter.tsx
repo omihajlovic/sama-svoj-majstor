@@ -29,6 +29,13 @@ function Counter({ target, started }: { target: number; started: boolean }) {
   useEffect(() => {
     if (!started) return
 
+    // Always reset so that strict-mode double-invoke (and any re-run) starts fresh
+    startRef.current = null
+    if (rafRef.current !== null) {
+      cancelAnimationFrame(rafRef.current)
+      rafRef.current = null
+    }
+
     const DURATION = 2000 // ms
     // ease-out cubic: starts fast, decelerates smoothly
     const easeOut = (t: number) => 1 - Math.pow(1 - t, 3)
@@ -39,13 +46,19 @@ function Counter({ target, started }: { target: number; started: boolean }) {
       setValue(Math.round(easeOut(progress) * target))
       if (progress < 1) {
         rafRef.current = requestAnimationFrame(tick)
+      } else {
+        rafRef.current = null
       }
     }
 
     rafRef.current = requestAnimationFrame(tick)
 
     return () => {
-      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current)
+      if (rafRef.current !== null) {
+        cancelAnimationFrame(rafRef.current)
+        rafRef.current = null
+      }
+      startRef.current = null
     }
   }, [started, target])
 
@@ -68,7 +81,7 @@ export default function StatsCounter() {
           observer.disconnect() // fire once, never again
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0 }
     )
 
     observer.observe(el)
