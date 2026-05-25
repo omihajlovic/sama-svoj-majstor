@@ -15,10 +15,10 @@ export default function ProjectsPreview() {
   const visible = [0, 1, 2].map((offset) => projekti[(startIndex + offset) % total])
 
   return (
-    <section style={{ backgroundColor: '#f5f4f1' }}>
-      <div className="max-w-[1440px] mx-auto px-16 pt-24 pb-16">
-        {/* Top row */}
-        <div className="flex items-start justify-between mb-12 gap-8 flex-wrap">
+    <section style={{ backgroundColor: '#f5f4f1', overflow: 'hidden' }}>
+      {/* Header — inside container */}
+      <div className="max-w-[1440px] mx-auto px-16 pt-24 pb-12">
+        <div className="flex items-start justify-between gap-8 flex-wrap">
           <div className="flex-1 min-w-0">
             <p
               className="font-outfit text-[11px] uppercase tracking-[0.12em] text-[#999999] mb-4"
@@ -75,30 +75,38 @@ export default function ProjectsPreview() {
         </div>
       </div>
 
-      {/* Carousel — full width, no padding */}
-      <div className="flex overflow-hidden" style={{ height: '500px' }}>
-        {visible.map((project, idx) => (
-          <Link
-            key={project.id}
-            href={`/projekti/${project.slug}`}
-            className="relative flex-shrink-0 transition-opacity duration-500 group"
-            style={{
-              width: idx === 0 ? '50%' : '25%',
-              opacity: idx === 0 ? 1 : 0.5,
-            }}
-          >
-            <Image
-              src={project.afterImage}
-              alt={project.title}
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-            {/* Text overlay on first slide */}
-            {idx === 0 && (
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-8">
-                <div className="flex items-end justify-between">
-                  <div>
+      {/*
+        Carousel:
+        - Left edge aligns with container content (same as heading above)
+        - Right side bleeds to viewport edge
+        - paddingLeft mirrors container offset at all viewport widths
+      */}
+      <div
+        className="flex"
+        style={{
+          paddingLeft: 'calc(max(0px, (100vw - 1440px) / 2) + 4rem)',
+          gap: '14px',
+          height: '500px',
+        }}
+      >
+        {visible.map((project, idx) => {
+          const isActive = idx === 0
+
+          const imageBlock = (
+            <>
+              <Image
+                src={project.afterImage}
+                alt={project.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+
+              {isActive && (
+                <>
+                  {/* Permanent bottom gradient + text */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
+                  <div className="absolute bottom-8 left-8 pointer-events-none">
                     <p
                       className="font-outfit text-[11px] uppercase tracking-[0.12em] text-white/70 mb-2"
                       style={{ fontWeight: 300 }}
@@ -118,12 +126,51 @@ export default function ProjectsPreview() {
                       {project.description.slice(0, 60)}...
                     </p>
                   </div>
-                  <span className="text-white text-xl">↗</span>
-                </div>
-              </div>
-            )}
-          </Link>
-        ))}
+
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 pointer-events-none" />
+
+                  {/* ↗ icon in thin square — appears on hover, bottom right */}
+                  <div
+                    className="absolute bottom-8 right-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                    style={{
+                      width: '32px',
+                      height: '32px',
+                      border: '1px solid white',
+                    }}
+                  >
+                    <span className="text-white text-[13px] leading-none">↗</span>
+                  </div>
+                </>
+              )}
+            </>
+          )
+
+          return isActive ? (
+            <Link
+              key={project.id}
+              href={`/projekti/${project.slug}`}
+              className="relative flex-shrink-0 group"
+              style={{ width: '50vw', height: '100%', cursor: 'pointer' }}
+            >
+              {imageBlock}
+            </Link>
+          ) : (
+            <div
+              key={project.id}
+              className="relative flex-shrink-0"
+              style={{
+                width: '25vw',
+                height: '100%',
+                opacity: 0.5,
+                cursor: 'default',
+                pointerEvents: 'none',
+              }}
+            >
+              {imageBlock}
+            </div>
+          )
+        })}
       </div>
 
       {/* CTA */}
