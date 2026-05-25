@@ -15,11 +15,11 @@ export default function BeforeAfterSection() {
     <section className="py-0" style={{ backgroundColor: '#f5f4f1' }}>
       <div className="max-w-[1440px] mx-auto px-16 py-24">
         <div
-          className="grid gap-12"
-          style={{ gridTemplateColumns: '280px 1fr' }}
+          className="grid"
+          style={{ gridTemplateColumns: '1fr 2fr' }}
         >
-          {/* Left column */}
-          <div className="flex flex-col justify-center py-4">
+          {/* Left column — pr gives breathing room without affecting grid split */}
+          <div className="flex flex-col justify-center py-4 pr-16">
             <p
               className="font-outfit text-[11px] uppercase tracking-[0.12em] text-[#999999] mb-6"
               style={{ fontWeight: 300 }}
