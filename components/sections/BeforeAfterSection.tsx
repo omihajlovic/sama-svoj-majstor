@@ -12,8 +12,8 @@ export default function BeforeAfterSection() {
   const prevIndex = (activeIndex - 1 + projekti.length) % projekti.length
 
   return (
-    <section className="py-0" style={{ backgroundColor: '#f5f4f1' }}>
-      <div className="max-w-[1440px] mx-auto px-16 py-24">
+    <section className="py-24" style={{ backgroundColor: '#f5f4f1' }}>
+      <div className="max-w-[1440px] mx-auto px-16">
         <div
           className="grid"
           style={{ gridTemplateColumns: '1fr 2fr' }}

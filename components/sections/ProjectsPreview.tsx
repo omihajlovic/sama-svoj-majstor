@@ -265,7 +265,7 @@ export default function ProjectsPreview() {
       </div>
 
       {/* CTA */}
-      <div className="text-center py-12">
+      <div className="text-center pt-12 pb-24">
         <Link
           href="/projekti"
           className="font-outfit text-[13px] text-[#111111] transition-opacity duration-300 hover:opacity-50"

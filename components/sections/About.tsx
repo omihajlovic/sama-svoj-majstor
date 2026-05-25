@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="py-28" style={{ backgroundColor: '#ffffff' }}>
+    <section className="py-24" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-[1440px] mx-auto px-16">
         {/* Top: tag above heading, both left-aligned */}
         <div className="mb-8">

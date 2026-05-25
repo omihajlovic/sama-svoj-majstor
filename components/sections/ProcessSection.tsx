@@ -58,7 +58,7 @@ export default function ProcessSection() {
   }, [])
 
   return (
-    <section className="py-28" style={{ backgroundColor: '#111111' }}>
+    <section className="py-24" style={{ backgroundColor: '#111111' }}>
       <style>{`
         .step-item {
           opacity: 0;
