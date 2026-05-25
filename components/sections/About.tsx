@@ -2,10 +2,10 @@ export default function About() {
   return (
     <section className="py-28" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-[1440px] mx-auto px-16">
-        {/* Top: tag + statement */}
-        <div className="grid mb-16" style={{ gridTemplateColumns: '160px 1fr' }}>
+        {/* Top: tag above heading, both left-aligned */}
+        <div className="mb-16" style={{ paddingLeft: '160px' }}>
           <p
-            className="font-outfit text-[12px] text-[#999999] pt-2"
+            className="font-outfit text-[12px] text-[#999999] mb-4"
             style={{ fontWeight: 300 }}
           >
             / O meni
@@ -20,21 +20,20 @@ export default function About() {
           </h2>
         </div>
 
-        {/* Mid: two paragraphs */}
+        {/* Mid: two paragraphs flush with heading */}
         <div
           className="grid mb-20"
-          style={{ gridTemplateColumns: '160px 1fr 1fr', gap: '4rem' }}
+          style={{ paddingLeft: '160px', gridTemplateColumns: '1fr 1fr', gap: '4rem' }}
         >
-          <div />
           <p
-            className="font-outfit text-[13px] text-[#666666]"
-            style={{ fontWeight: 300, lineHeight: 1.8 }}
+            className="font-outfit text-[#666666]"
+            style={{ fontWeight: 300, fontSize: '16px', lineHeight: 1.8 }}
           >
             Verujem da svaki prostor nosi priču svog stanara. Moj posao nije da ti nametnemo trend, već da te pitam kako živiš, šta te raduje, šta ti smeta — i da iz toga izvučem rešenje koje je samo tvoje. Dizajn enterijera nije luksuz. To je odluka da počneš da živiš bolje, odmah, u prostoru koji već imaš.
           </p>
           <p
-            className="font-outfit text-[13px] text-[#666666]"
-            style={{ fontWeight: 300, lineHeight: 1.8 }}
+            className="font-outfit text-[#666666]"
+            style={{ fontWeight: 300, fontSize: '16px', lineHeight: 1.8 }}
           >
             Posle godina pisanja o arhitekturi i dizajnu, počela sam sama da uređujem prostore. Svaki projekat je za mene istraživanje — kombinujem znanje o materijalima, svetlosti i ergonomiji sa pažljivim slušanjem klijenta. Rezultat su prostori koji izgledaju lepo, ali se pre svega dobro osećaju.
           </p>
@@ -82,8 +81,8 @@ export default function About() {
                 {stat.label}
               </p>
               <p
-                className="font-outfit text-[12px] text-[#888888]"
-                style={{ fontWeight: 300 }}
+                className="font-outfit text-[#888888]"
+                style={{ fontWeight: 300, fontSize: '15px' }}
               >
                 {stat.desc}
               </p>
