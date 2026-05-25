@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        cormorant: ['var(--font-cormorant)', 'Georgia', 'serif'],
+        cormorant: ['var(--font-cormorant)', 'Georgia', 'serif'], // Lora
         outfit: ['var(--font-outfit)', 'system-ui', 'sans-serif'],
       },
       colors: {
