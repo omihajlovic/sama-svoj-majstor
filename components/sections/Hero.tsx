@@ -26,8 +26,7 @@ export default function Hero() {
           className="font-outfit text-[#666666] mb-10"
           style={{
             fontWeight: 300,
-            fontSize: '14px',
-            maxWidth: '380px',
+            fontSize: '18px',
             lineHeight: 1.7,
           }}
         >
@@ -35,7 +34,7 @@ export default function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="flex items-center gap-8 mb-16 flex-wrap">
+        <div className="flex items-center gap-8 mb-0 flex-wrap">
           <Link
             href="/projekti"
             className="font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111]"
@@ -56,16 +55,6 @@ export default function Hero() {
           </Link>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="flex items-center gap-4">
-          <div className="w-8 h-px bg-[#999999]" />
-          <span
-            className="font-outfit text-[11px] text-[#999999] uppercase tracking-[0.12em]"
-            style={{ fontWeight: 300 }}
-          >
-            Scroll
-          </span>
-        </div>
       </div>
 
       {/* Right column: full-height image to browser edge */}

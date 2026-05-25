@@ -3,7 +3,7 @@ export default function About() {
     <section className="py-28" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-[1440px] mx-auto px-16">
         {/* Top: tag above heading, both left-aligned */}
-        <div className="mb-16">
+        <div className="mb-8">
           <p
             className="font-outfit text-[12px] text-[#999999] mb-2"
             style={{ fontWeight: 300 }}
