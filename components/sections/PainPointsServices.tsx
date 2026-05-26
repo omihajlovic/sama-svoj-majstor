@@ -54,7 +54,7 @@ export default function PainPointsServices() {
           {/* Right: services */}
           <div>
             <p
-              className="font-outfit text-[11px] uppercase tracking-[0.12em] text-[#999999] mb-8"
+              className="font-outfit text-[14px] text-[#999999] mb-8"
               style={{ fontWeight: 300 }}
             >
               / Kako mogu da ti pomognem

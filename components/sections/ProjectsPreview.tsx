@@ -171,7 +171,7 @@ export default function ProjectsPreview() {
         <div className="flex items-end justify-between gap-8 flex-wrap">
           <div className="flex-1 min-w-0">
             <p
-              className="font-outfit text-[11px] uppercase tracking-[0.12em] text-[#999999] mb-4"
+              className="font-outfit text-[14px] text-[#999999] mb-4"
               style={{ fontWeight: 300 }}
             >
               / Neki od mojih projekata

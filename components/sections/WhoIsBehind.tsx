@@ -8,7 +8,7 @@ export default function WhoIsBehind() {
         {/* Left: content */}
         <div className="flex flex-col justify-center px-16 py-24">
           <p
-            className="font-outfit text-[11px] uppercase tracking-[0.12em] text-[#999999] mb-6"
+            className="font-outfit text-[14px] text-[#999999] mb-6"
             style={{ fontWeight: 300 }}
           >
             / Ko stoji iza ovih projekata

@@ -7,7 +7,7 @@ export default function About() {
         {/* Top: tag above heading, both left-aligned */}
         <div className="mb-8">
           <p
-            className="font-outfit text-[12px] text-[#999999] mb-2"
+            className="font-outfit text-[14px] text-[#999999] mb-2"
             style={{ fontWeight: 300 }}
           >
             / O meni
