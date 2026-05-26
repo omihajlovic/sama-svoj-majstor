@@ -18,9 +18,68 @@ export default function BeforeAfterSlider({
   afterLabel = 'POSLE',
   height = '100%',
 }: BeforeAfterSliderProps) {
-  const [position, setPosition] = useState(50)
+  // Start at 25% — auto-animation will sweep to 60% on viewport entry
+  const [position, setPosition] = useState(25)
   const containerRef = useRef<HTMLDivElement>(null)
   const isDragging = useRef(false)
+  const animRef = useRef<number | null>(null)
+  const animTriggered = useRef(false)
+  const userInteracted = useRef(false)
+
+  // Cancel any in-flight animation frame
+  const cancelAnim = useCallback(() => {
+    if (animRef.current !== null) {
+      cancelAnimationFrame(animRef.current)
+      animRef.current = null
+    }
+  }, [])
+
+  // Auto-animate 25% → 60% when the slider enters the viewport (fires once)
+  useEffect(() => {
+    const el = containerRef.current
+    if (!el) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !animTriggered.current && !userInteracted.current) {
+          animTriggered.current = true
+
+          const FROM = 25
+          const TO = 60
+          const DURATION = 1500
+          const start = performance.now()
+
+          const easeInOut = (t: number) =>
+            t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
+
+          const tick = (now: number) => {
+            // User grabbed the handle — hand off immediately
+            if (userInteracted.current) {
+              animRef.current = null
+              return
+            }
+            const progress = Math.min((now - start) / DURATION, 1)
+            setPosition(FROM + easeInOut(progress) * (TO - FROM))
+            if (progress < 1) {
+              animRef.current = requestAnimationFrame(tick)
+            } else {
+              animRef.current = null
+            }
+          }
+
+          animRef.current = requestAnimationFrame(tick)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.5 }
+    )
+
+    observer.observe(el)
+    return () => {
+      observer.disconnect()
+      cancelAnim()
+    }
+  }, [cancelAnim])
 
   const updatePosition = useCallback((clientX: number) => {
     if (!containerRef.current) return
@@ -33,6 +92,9 @@ export default function BeforeAfterSlider({
   const handleMouseDown = useCallback(
     (e: React.MouseEvent) => {
       e.preventDefault()
+      // Take over from any running auto-animation
+      userInteracted.current = true
+      cancelAnim()
       isDragging.current = true
       updatePosition(e.clientX)
 
@@ -48,11 +110,13 @@ export default function BeforeAfterSlider({
       window.addEventListener('mousemove', handleMouseMove)
       window.addEventListener('mouseup', handleMouseUp)
     },
-    [updatePosition]
+    [updatePosition, cancelAnim]
   )
 
   const handleTouchStart = useCallback(
     (e: React.TouchEvent) => {
+      userInteracted.current = true
+      cancelAnim()
       updatePosition(e.touches[0].clientX)
 
       const handleTouchMove = (e: TouchEvent) => {
@@ -66,7 +130,7 @@ export default function BeforeAfterSlider({
       window.addEventListener('touchmove', handleTouchMove, { passive: true })
       window.addEventListener('touchend', handleTouchEnd)
     },
-    [updatePosition]
+    [updatePosition, cancelAnim]
   )
 
   return (
@@ -118,13 +182,12 @@ export default function BeforeAfterSlider({
         {afterLabel}
       </span>
 
-      {/* Divider line */}
+      {/* Divider line + handle */}
       <div
         className="absolute top-0 bottom-0 z-20 pointer-events-none"
         style={{ left: `${position}%`, transform: 'translateX(-50%)' }}
       >
         <div className="w-px h-full bg-white" />
-        {/* Handle */}
         <div
           className="absolute top-1/2 left-1/2 pointer-events-auto cursor-col-resize"
           style={{

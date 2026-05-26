@@ -81,44 +81,60 @@ export default function BeforeAfterSection() {
               />
             </div>
 
-            {/* Prev/Next navigation below slider */}
-            <div className="flex items-center justify-end gap-8 mt-5">
-              <div className="flex items-center gap-6">
-                {/* Progress line */}
-                <div
-                  className="w-32 h-px"
-                  style={{ backgroundColor: 'rgba(0,0,0,0.1)', position: 'relative' }}
-                >
-                  <div
-                    className="h-px bg-[#111111] transition-all duration-500"
-                    style={{ width: `${((activeIndex + 1) / projekti.length) * 100}%` }}
-                  />
-                </div>
+            {/* Bottom bar: drag hint (left) + prev/next nav (right) */}
+            <div className="flex items-center justify-between mt-5">
 
+              {/* Left: drag hint */}
+              <div className="flex items-center gap-2">
+                <span className="text-[#999999]" style={{ fontSize: '13px' }}>⟷</span>
                 <span
-                  className="font-outfit text-[12px] text-[#999999]"
+                  className="font-outfit text-[13px] text-[#999999]"
                   style={{ fontWeight: 300 }}
                 >
-                  {activeIndex + 1} / {projekti.length}
+                  Prevuci da vidiš pre i posle
                 </span>
               </div>
 
-              <div className="flex items-center gap-3">
-                <button
-                  onClick={() => setActiveIndex(prevIndex)}
-                  className="font-outfit text-[12px] text-[#111111] transition-opacity duration-300 hover:opacity-50"
-                  style={{ fontWeight: 300 }}
-                >
-                  ← Prev
-                </button>
-                <button
-                  onClick={() => setActiveIndex(nextIndex)}
-                  className="font-outfit text-[12px] text-[#111111] transition-opacity duration-300 hover:opacity-50"
-                  style={{ fontWeight: 300 }}
-                >
-                  Next →
-                </button>
+              {/* Right: progress + prev/next */}
+              <div className="flex items-center gap-8">
+                <div className="flex items-center gap-6">
+                  {/* Progress line */}
+                  <div
+                    className="w-32 h-px"
+                    style={{ backgroundColor: 'rgba(0,0,0,0.1)', position: 'relative' }}
+                  >
+                    <div
+                      className="h-px bg-[#111111] transition-all duration-500"
+                      style={{ width: `${((activeIndex + 1) / projekti.length) * 100}%` }}
+                    />
+                  </div>
+
+                  <span
+                    className="font-outfit text-[12px] text-[#999999]"
+                    style={{ fontWeight: 300 }}
+                  >
+                    {activeIndex + 1} / {projekti.length}
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={() => setActiveIndex(prevIndex)}
+                    className="font-outfit text-[12px] text-[#111111] transition-opacity duration-300 hover:opacity-50"
+                    style={{ fontWeight: 300 }}
+                  >
+                    ← Prev
+                  </button>
+                  <button
+                    onClick={() => setActiveIndex(nextIndex)}
+                    className="font-outfit text-[12px] text-[#111111] transition-opacity duration-300 hover:opacity-50"
+                    style={{ fontWeight: 300 }}
+                  >
+                    Next →
+                  </button>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
