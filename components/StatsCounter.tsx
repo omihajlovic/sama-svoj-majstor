@@ -62,8 +62,7 @@ export default function StatsCounter() {
             style={{
               paddingTop: '2.5rem',
               paddingBottom: '2.5rem',
-              // 4rem matches the px-16 container used elsewhere in About
-              paddingLeft: '4rem',
+              paddingLeft: i === 0 ? '4rem' : '2.5rem',
               paddingRight: i === stats.length - 1 ? '4rem' : '0',
               borderRight: i < stats.length - 1 ? '0.5px solid rgba(0,0,0,0.1)' : 'none',
             }}
