@@ -5,6 +5,7 @@ const painPoints = [
   'Kupio/la sam nameštaj koji ne odgovara prostoru',
   'Prostor mi izgleda haotično i bez stila',
   'Nemam budžet za arhitektu, ali ipak hoću lepo',
+  'Znam šta volim, ali ne znam kako da to spojim u celinu',
 ]
 
 const services = [
