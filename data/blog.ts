@@ -15,7 +15,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'kako-odabrati-paletu-boja',
     title: 'Kako odabrati pravu paletu boja za vaš dom',
     date: '15. april 2024.',
-    author: 'Ana Nikolić',
+    author: 'Sanja Mihajlovic',
     excerpt: 'Boja je najmoćniji alat u dizajnu enterijera. Saznajte kako da odaberete paletu koja će učiniti vaš prostor većim, svetlijim i prijatnijim za život.',
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80',
     content: `Boja je možda najmoćniji alat kojim raspolažemo u uređenju enterijera. Ona može da proširi ili suzi prostor, da ga ugreje ili rashladi, da ga učini mirnim ili dinamičnim. Ipak, mnogi od nas se osećaju izgubljeno pred čuvenim "točkom boja" i beskrajnim uzorcima u prodavnicama materijala.
@@ -45,7 +45,7 @@ Ako imate pitanja o bojama za vaš konkretan prostor, slobodno mi pišite. Rado 
     slug: 'greske-u-uredenju-enterijera',
     title: '5 grešaka u uređenju enterijera koje treba izbegavati',
     date: '2. mart 2024.',
-    author: 'Ana Nikolić',
+    author: 'Sanja Mihajlovic',
     excerpt: 'Posle stotine projekata, naučila sam koje su greške najčešće — i najskuplje. Evo šta izbegavati pre nego što potrošite i prvi evro.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80',
     content: `Tokom godina rada na uređenju enterijera, videla sam iste greške iznova i iznova. Nisu to greške koje prave samo laici — ponekad i iskusni vlasnici prostora padnu u iste zamke. Evo pet najčešćih, i kako da ih izbegnete.
@@ -79,7 +79,7 @@ Prostor kroz koji se teško prolazi, gde se stalno udarate u uglove nameštaja i
     slug: 'virtualna-tura-novi-sad',
     title: 'Virtualna tura: Stan u Novom Sadu pre i posle',
     date: '18. januar 2024.',
-    author: 'Ana Nikolić',
+    author: 'Sanja Mihajlovic',
     excerpt: 'Pratite kompletnu transformaciju jednosobnog stana od 48m² — od prvog razgovora sa klijentima, kroz proces dizajna, do finalnog rezultata.',
     image: 'https://images.unsplash.com/photo-1567767292278-a204638a3adf?w=800&q=80',
     content: `Kad su mi se Jelena i Marko obratili, imali su jasnu ideju o tome šta žele — ali nisu znali kako da to ostvare u prostoru od svega 48 kvadrata.

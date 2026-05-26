@@ -84,7 +84,7 @@ export default function ProcessSection() {
           </h2>
           <div className="flex items-end">
             <p
-              className="font-outfit text-[13px]"
+              className="font-outfit text-[15px]"
               style={{ fontWeight: 300, color: 'rgba(255,255,255,0.5)', lineHeight: 1.8 }}
             >
               Svaki korak je osmišljen da ti bude jasan i bez stresa. Znaš uvek šta sledeće sledi i šta se od tebe očekuje.
@@ -98,26 +98,33 @@ export default function ProcessSection() {
             <div
               key={step.number}
               ref={(el) => { stepsRef.current[i] = el }}
-              className="step-item grid grid-cols-1 md:grid-cols-3 py-10 gap-6"
+              className="step-item grid grid-cols-1 md:grid-cols-2 py-10 gap-6 items-center"
               style={{
                 borderTop: '0.5px solid rgba(255,255,255,0.1)',
+                // Last step also gets a border-bottom to close the list
+                borderBottom: i === steps.length - 1 ? '0.5px solid rgba(255,255,255,0.1)' : 'none',
                 transitionDelay: `${i * 80}ms`,
               }}
             >
+              {/* Left: KORAK label above title, both left-aligned */}
+              <div>
+                <p
+                  className="font-outfit text-[12px] uppercase tracking-[0.12em]"
+                  style={{ fontWeight: 300, color: 'rgba(255,255,255,0.4)', marginBottom: '0.5rem' }}
+                >
+                  KORAK {step.number}
+                </p>
+                <h3
+                  className="font-cormorant text-white"
+                  style={{ fontWeight: 300, fontSize: '28px', lineHeight: 1.2 }}
+                >
+                  {step.title}
+                </h3>
+              </div>
+
+              {/* Right: description — vertically centered with the label+title block */}
               <p
-                className="font-outfit text-[11px] uppercase tracking-[0.12em]"
-                style={{ fontWeight: 300, color: 'rgba(255,255,255,0.4)' }}
-              >
-                KORAK {step.number}
-              </p>
-              <h3
-                className="font-cormorant text-white"
-                style={{ fontWeight: 300, fontSize: '28px', lineHeight: 1.2 }}
-              >
-                {step.title}
-              </h3>
-              <p
-                className="font-outfit text-[13px]"
+                className="font-outfit text-[15px]"
                 style={{ fontWeight: 300, color: 'rgba(255,255,255,0.6)', lineHeight: 1.8 }}
               >
                 {step.description}

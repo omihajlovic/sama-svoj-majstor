@@ -57,7 +57,7 @@ export default function WhoIsBehind() {
         <div className="relative min-h-[400px]">
           <Image
             src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=900&q=80"
-            alt="Ana Nikolić — dizajner enterijera"
+            alt="Sanja Mihajlovic — dizajner enterijera"
             fill
             className="object-cover object-center"
             sizes="50vw"

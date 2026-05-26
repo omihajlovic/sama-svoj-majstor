@@ -1,6 +1,6 @@
 const testimonials = [
   {
-    quote: 'Ana je uspela da od našeg malog i haotičnog stana napravi prostor u koji se jedva čekamo da se vratimo kući. Svaka odluka je imala smisla i sve je savršeno funkcionisalo u celini.',
+    quote: 'Sanja je uspela da od našeg malog i haotičnog stana napravi prostor u koji se jedva čekamo da se vratimo kući. Svaka odluka je imala smisla i sve je savršeno funkcionisalo u celini.',
     name: 'Marija S.',
     info: 'Stan, Beograd — 48m²',
   },
@@ -20,7 +20,7 @@ const testimonials = [
     info: 'Kuća, Novi Sad — 120m²',
   },
   {
-    quote: 'Konačno prostor koji je i lep i funkcionalan. Ana je razumela da imam malu decu i da mi treba i estetika i praktičnost — i pronašla savršenu ravnotežu.',
+    quote: 'Konačno prostor koji je i lep i funkcionalan. Sanja je razumela da imam malu decu i da mi treba i estetika i praktičnost — i pronašla savršenu ravnotežu.',
     name: 'Nikola P.',
     info: 'Stan, Beograd — 65m²',
   },
