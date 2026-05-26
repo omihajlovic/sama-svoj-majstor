@@ -41,9 +41,11 @@ export default function About() {
           </p>
         </div>
 
-        {/* Stats — animated counter, triggers once on viewport entry */}
-        <StatsCounter />
       </div>
+
+      {/* Stats sit outside the px-16 container so their own paddingLeft: 4rem
+          aligns the numbers flush with the heading and body text above */}
+      <StatsCounter />
     </section>
   )
 }

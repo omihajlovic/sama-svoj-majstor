@@ -46,16 +46,68 @@ function Counter({ target }: { target: number }) {
 
 export default function StatsCounter() {
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', borderTop: '0.5px solid rgba(0,0,0,0.1)' }}>
-      {stats.map((stat) => (
-        <div key={stat.label} style={{ padding: '2.5rem 0', borderRight: '0.5px solid rgba(0,0,0,0.1)' }}>
-          <div style={{ fontSize: '56px', fontFamily: 'var(--font-lora)', fontWeight: 300, lineHeight: 1 }}>
-            <Counter target={stat.number} />{stat.suffix}
+    // max-w + auto margins mirror the container used in About.tsx so the
+    // border-top and column borders align with the section content above.
+    <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr 1fr',
+          borderTop: '0.5px solid rgba(0,0,0,0.1)',
+        }}
+      >
+        {stats.map((stat, i) => (
+          <div
+            key={stat.label}
+            style={{
+              paddingTop: '2.5rem',
+              paddingBottom: '2.5rem',
+              // 4rem matches the px-16 container used elsewhere in About
+              paddingLeft: '4rem',
+              paddingRight: i === stats.length - 1 ? '4rem' : '0',
+              borderRight: i < stats.length - 1 ? '0.5px solid rgba(0,0,0,0.1)' : 'none',
+            }}
+          >
+            {/* Animated number + static suffix */}
+            <div
+              style={{
+                fontSize: '56px',
+                fontFamily: 'var(--font-cormorant)',
+                fontWeight: 300,
+                lineHeight: 1,
+                color: '#111111',
+              }}
+            >
+              <Counter target={stat.number} />{stat.suffix}
+            </div>
+
+            {/* Label */}
+            <div
+              style={{
+                fontSize: '13px',
+                fontWeight: 400,
+                color: '#111111',
+                marginTop: '1rem',
+                marginBottom: '0.5rem',
+              }}
+            >
+              {stat.label}
+            </div>
+
+            {/* Description */}
+            <div
+              style={{
+                fontSize: '15px',
+                fontWeight: 300,
+                color: '#888888',
+                lineHeight: 1.7,
+              }}
+            >
+              {stat.description}
+            </div>
           </div>
-          <div style={{ fontSize: '13px', fontWeight: 400, marginTop: '1rem', marginBottom: '0.5rem' }}>{stat.label}</div>
-          <div style={{ fontSize: '15px', fontWeight: 300, color: '#888', lineHeight: 1.7 }}>{stat.description}</div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   )
 }
