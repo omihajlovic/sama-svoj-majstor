@@ -187,7 +187,7 @@ export default function ProjectsPreview() {
           {/* Description + buttons, bottom-aligned with headline */}
           <div className="flex items-end gap-8">
             <p
-              className="font-outfit text-[13px] text-[#666666] max-w-[240px]"
+              className="font-outfit text-[15px] text-[#666666] max-w-[240px]"
               style={{ fontWeight: 300, lineHeight: 1.7 }}
             >
               Pogledaj neke od transformacija na kojima sam radila.
