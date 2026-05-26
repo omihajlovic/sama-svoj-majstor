@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 
 const steps = [
@@ -69,6 +70,22 @@ export default function ProcessSection() {
           opacity: 1;
           transform: translateY(0);
         }
+        .process-cta {
+          display: inline-block;
+          font-family: var(--font-outfit);
+          font-weight: 300;
+          font-size: 14px;
+          letter-spacing: 0.08em;
+          color: white;
+          background: transparent;
+          border: 0.5px solid white;
+          padding: 1rem 2.5rem;
+          transition: background 0.3s ease, color 0.3s ease;
+        }
+        .process-cta:hover {
+          background: white;
+          color: #111111;
+        }
       `}</style>
 
       <div className="max-w-[1440px] mx-auto px-16">
@@ -101,7 +118,6 @@ export default function ProcessSection() {
               className="step-item grid grid-cols-1 md:grid-cols-2 py-10 gap-6 items-center"
               style={{
                 borderTop: '0.5px solid rgba(255,255,255,0.1)',
-                // Last step also gets a border-bottom to close the list
                 borderBottom: i === steps.length - 1 ? '0.5px solid rgba(255,255,255,0.1)' : 'none',
                 transitionDelay: `${i * 80}ms`,
               }}
@@ -122,15 +138,22 @@ export default function ProcessSection() {
                 </h3>
               </div>
 
-              {/* Right: description — vertically centered with the label+title block */}
+              {/* Right: description */}
               <p
                 className="font-outfit text-[15px]"
-                style={{ fontWeight: 300, color: 'rgba(255,255,255,0.6)', lineHeight: 1.8 }}
+                style={{ fontWeight: 300, color: 'rgba(255,255,255,0.7)', lineHeight: 1.8 }}
               >
                 {step.description}
               </p>
             </div>
           ))}
+        </div>
+
+        {/* CTA — centered, 4rem gap above to breathe after last step border */}
+        <div className="text-center" style={{ marginTop: '4rem' }}>
+          <Link href="/kontakt" className="process-cta">
+            Započni svoju transformaciju
+          </Link>
         </div>
       </div>
     </section>
