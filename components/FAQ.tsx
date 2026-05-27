@@ -49,7 +49,7 @@ export default function FAQ({ items = faqItems }: FAQProps) {
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
           >
             <span
-              className="font-cormorant text-[20px] text-[#111111] pr-8"
+              className="font-cormorant text-[24px] text-[#111111] pr-8"
               style={{ fontWeight: 300, fontStyle: 'italic' }}
             >
               {item.question}
@@ -74,7 +74,7 @@ export default function FAQ({ items = faqItems }: FAQProps) {
             }}
           >
             <p
-              className="font-outfit text-[14px] text-[#666666] leading-[1.8] pb-6"
+              className="font-outfit text-[16px] text-[#666666] leading-[1.8] pb-6"
               style={{ fontWeight: 300 }}
             >
               {item.answer}
