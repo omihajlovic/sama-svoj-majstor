@@ -33,7 +33,8 @@ export default function PainPointsServices() {
               className="font-cormorant text-[#111111] mb-12"
               style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
             >
-              Ako se pronalaziš u{' '}
+              Ako se pronalaziš u
+              <br />
               <em style={{ fontStyle: 'italic' }}>ovome...</em>
             </h2>
 
