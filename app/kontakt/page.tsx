@@ -58,7 +58,7 @@ export default function KontaktPage() {
               className="font-cormorant text-[#111111] mb-4"
               style={{
                 fontWeight: 300,
-                fontSize: 'clamp(32px, 5.5vw, 72px)',
+                fontSize: '48px',
                 lineHeight: 1.05,
               }}
             >

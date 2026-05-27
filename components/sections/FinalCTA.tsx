@@ -40,7 +40,7 @@ export default function FinalCTA() {
           className="font-cormorant text-white mb-6"
           style={{
             fontWeight: 300,
-            fontSize: 'clamp(32px, 4vw, 52px)',
+            fontSize: '48px',
             lineHeight: 1.1,
             maxWidth: '600px',
           }}

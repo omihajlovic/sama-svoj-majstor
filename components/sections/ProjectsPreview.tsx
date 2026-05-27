@@ -178,7 +178,7 @@ export default function ProjectsPreview() {
             </p>
             <h2
               className="font-cormorant text-[#111111]"
-              style={{ fontWeight: 300, fontSize: 'clamp(32px, 4vw, 48px)', lineHeight: 1.1 }}
+              style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
             >
               Svaki prostor ima svoju priču
             </h2>

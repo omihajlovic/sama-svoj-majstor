@@ -14,7 +14,7 @@ export default function About() {
           </p>
           <h2
             className="font-cormorant text-[#111111]"
-            style={{ fontWeight: 300, fontSize: 'clamp(28px, 3vw, 38px)', lineHeight: 1.2 }}
+            style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.2 }}
           >
             Novinar po obrazovanju, dizajner po pozivu.
             <br />

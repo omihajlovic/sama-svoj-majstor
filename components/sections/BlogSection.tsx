@@ -13,7 +13,7 @@ export default function BlogSection() {
         >
           <h2
             className="font-cormorant text-[#111111]"
-            style={{ fontWeight: 300, fontSize: 'clamp(32px, 3.5vw, 48px)', lineHeight: 1.1 }}
+            style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
           >
             Blog
           </h2>

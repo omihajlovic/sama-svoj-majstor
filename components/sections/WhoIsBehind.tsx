@@ -17,7 +17,7 @@ export default function WhoIsBehind() {
             className="font-cormorant text-[#111111] mb-8"
             style={{
               fontWeight: 300,
-              fontSize: 'clamp(28px, 3vw, 42px)',
+              fontSize: '48px',
               lineHeight: 1.15,
             }}
           >

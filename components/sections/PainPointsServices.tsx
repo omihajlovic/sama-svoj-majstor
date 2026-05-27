@@ -31,7 +31,7 @@ export default function PainPointsServices() {
           <div>
             <h2
               className="font-cormorant text-[#111111] mb-12"
-              style={{ fontWeight: 300, fontSize: 'clamp(36px, 4vw, 52px)', lineHeight: 1.1 }}
+              style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
             >
               Ako se pronalaziš u{' '}
               <em style={{ fontStyle: 'italic' }}>ovome...</em>
@@ -57,7 +57,7 @@ export default function PainPointsServices() {
           <div>
             <h2
               className="font-cormorant text-[#111111] mb-12"
-              style={{ fontWeight: 300, fontSize: 'clamp(36px, 4vw, 52px)', lineHeight: 1.1 }}
+              style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
             >
               Kako mogu da ti pomognem
             </h2>

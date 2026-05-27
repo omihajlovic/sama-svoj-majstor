@@ -93,7 +93,7 @@ export default function ProcessSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 mb-20 gap-8">
           <h2
             className="font-cormorant text-white"
-            style={{ fontWeight: 300, fontSize: 'clamp(36px, 4.5vw, 56px)', lineHeight: 1.1 }}
+            style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
           >
             Kako izgleda
             <br />

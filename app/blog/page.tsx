@@ -15,7 +15,7 @@ export default function BlogPage() {
           </p>
           <h1
             className="font-cormorant text-[#111111] mb-6"
-            style={{ fontWeight: 300, fontSize: 'clamp(42px, 6vw, 72px)', lineHeight: 1.05 }}
+            style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.05 }}
           >
             Blog
           </h1>

@@ -10,7 +10,7 @@ export default function FAQSection() {
             <div className="sticky top-24">
               <h2
                 className="font-cormorant text-[#111111]"
-                style={{ fontWeight: 300, fontSize: 'clamp(32px, 3.5vw, 48px)', lineHeight: 1.1 }}
+                style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
               >
                 Često postavljana pitanja
               </h2>
