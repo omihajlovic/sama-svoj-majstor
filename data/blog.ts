@@ -81,7 +81,7 @@ Prostor kroz koji se teško prolazi, gde se stalno udarate u uglove nameštaja i
     date: '18. januar 2024.',
     author: 'Sanja Mihajlovic',
     excerpt: 'Pratite kompletnu transformaciju jednosobnog stana od 48m² — od prvog razgovora sa klijentima, kroz proces dizajna, do finalnog rezultata.',
-    image: 'https://images.unsplash.com/photo-1600210491892-03d54730d386?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80',
     content: `Kad su mi se Jelena i Marko obratili, imali su jasnu ideju o tome šta žele — ali nisu znali kako da to ostvare u prostoru od svega 48 kvadrata.
 
 **Početno stanje**
