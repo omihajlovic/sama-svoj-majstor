@@ -60,7 +60,7 @@ export default function Hero() {
       {/* Right column: full-height image to browser edge */}
       <div className="relative min-h-[50vh] md:min-h-screen">
         <Image
-          src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=1200&q=80"
+          src="/hero-image-02.jpg"
           alt="Dizajner enterijera"
           fill
           priority
