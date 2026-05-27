@@ -83,7 +83,7 @@ export default function StatsCounter() {
             {/* Label */}
             <div
               style={{
-                fontSize: '13px',
+                fontSize: '15px',
                 fontWeight: 400,
                 color: '#111111',
                 marginTop: '1rem',
