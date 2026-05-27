@@ -69,7 +69,7 @@ export default function FinalCTA() {
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-16 py-24 text-center">
         <h2
           className="font-cormorant text-white mb-6"
-          style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
+          style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1, textShadow: '0 2px 8px rgba(0,0,0,0.6), 0 1px 2px rgba(0,0,0,0.8)' }}
         >
           Imaš prostor koji želiš da urediš?
         </h2>
@@ -81,6 +81,7 @@ export default function FinalCTA() {
             fontSize: '16px',
             lineHeight: 1.7,
             maxWidth: '480px',
+            textShadow: '0 1px 6px rgba(0,0,0,0.6), 0 1px 2px rgba(0,0,0,0.7)',
           }}
         >
           Pošalji mi osnovne informacije o prostoru i javiću ti se u roku od 48 sati sa sledećim koracima.
@@ -98,6 +99,7 @@ export default function FinalCTA() {
             fontWeight: 400,
             fontSize: '14px',
             color: 'white',
+            textShadow: '0 1px 6px rgba(0,0,0,0.6), 0 1px 2px rgba(0,0,0,0.7)',
           }}
         >
           Nakon prijave, javiću ti se sa sledećim koracima i detaljima o plaćanju
