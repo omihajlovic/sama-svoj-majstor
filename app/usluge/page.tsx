@@ -45,7 +45,7 @@ export default function UslugePage() {
       <div className="pt-40 pb-16" style={{ backgroundColor: '#f5f4f1' }}>
         <div className="max-w-[1440px] mx-auto px-16">
           <p
-            className="font-outfit text-[14px] text-[#999999] mb-4"
+            className="font-outfit text-[14px] text-[#999999] mb-2"
             style={{ fontWeight: 300 }}
           >
             / Saradnja

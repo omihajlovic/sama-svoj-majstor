@@ -21,7 +21,7 @@ export default function BeforeAfterSection() {
           {/* Left column — pr gives breathing room without affecting grid split */}
           <div className="flex flex-col justify-center py-4 pr-16">
             <p
-              className="font-outfit text-[14px] text-[#999999] mb-6"
+              className="font-outfit text-[14px] text-[#999999] mb-2"
               style={{ fontWeight: 300 }}
             >
               / Transformacije
