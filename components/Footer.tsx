@@ -93,7 +93,7 @@ export default function Footer() {
             className="font-cormorant text-white leading-none"
             style={{
               fontWeight: 300,
-              fontSize: 'clamp(48px, 10vw, 140px)',
+              fontSize: '64px',
               letterSpacing: '-0.02em',
             }}
           >
