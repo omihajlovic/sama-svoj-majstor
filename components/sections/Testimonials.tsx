@@ -49,8 +49,8 @@ export default function Testimonials() {
             </div>
           </div>
 
-          {/* Right: testimonials — pl-16 so left edge aligns with 50% of container */}
-          <div className="pl-16">
+          {/* Right: testimonials — left edge at 50% of container */}
+          <div>
             {testimonials.map((t, i) => (
               <div
                 key={i}
