@@ -25,14 +25,14 @@ export default function WhoIsBehind() {
           </h2>
           <div className="mb-8">
             <p
-              className="font-outfit text-[14px] text-[#666666] mb-4"
-              style={{ fontWeight: 300, lineHeight: 1.8 }}
+              className="font-outfit text-[#666666] mb-4"
+              style={{ fontWeight: 300, fontSize: '16px', lineHeight: 1.8 }}
             >
               Počela sam karijeru kao novinarka koja je pisala o arhitekturi i dizajnu. Godinama sam intervjuisala arhitekte, pratila izložbe, pisala o najlepšim prostorima sveta — i sve vreme sam znala da to što opisujem hoću da radim, ne samo da opisujem.
             </p>
             <p
-              className="font-outfit text-[14px] text-[#666666]"
-              style={{ fontWeight: 300, lineHeight: 1.8 }}
+              className="font-outfit text-[#666666]"
+              style={{ fontWeight: 300, fontSize: '16px', lineHeight: 1.8 }}
             >
               Danas radim sa klijentima koji nemaju neograničen budžet ali imaju jasan osećaj za to šta žele. Pomažem im da taj osećaj prevedu u prostor koji funkcioniše i koji vole.
             </p>
@@ -46,8 +46,8 @@ export default function WhoIsBehind() {
             Pošalji upit
           </Link>
           <p
-            className="font-outfit text-[12px] text-[#999999]"
-            style={{ fontWeight: 300 }}
+            className="font-outfit text-[#999999]"
+            style={{ fontWeight: 300, fontSize: '14px' }}
           >
             Nakon prijave, javiću ti se sa sledećim koracima
           </p>
