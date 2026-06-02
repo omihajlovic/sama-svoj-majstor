@@ -55,7 +55,7 @@ export default function Navbar() {
         <div className="max-w-[1440px] mx-auto px-16 flex items-center justify-between h-16">
           <Link
             href="/"
-            className="font-outfit text-[15px] tracking-[0.04em] text-[#111111] transition-opacity duration-300 hover:opacity-50"
+            className="font-outfit text-[15px] tracking-[0.04em] text-[#111111] transition-opacity duration-300 hover:opacity-50 active:scale-95 transition-transform duration-150 ease-out"
             style={{ fontWeight: 300 }}
           >
             Sama Svoj Majstor
