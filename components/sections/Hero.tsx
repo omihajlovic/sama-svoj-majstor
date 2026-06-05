@@ -44,12 +44,8 @@ export default function Hero() {
           </Link>
           <Link
             href="/kontakt"
-            className="font-outfit text-[13px] text-[#111111] transition-opacity duration-300 hover:opacity-50"
-            style={{
-              fontWeight: 300,
-              textDecoration: 'underline',
-              textUnderlineOffset: '4px',
-            }}
+            className="font-outfit text-[13px] tracking-[0.04em] text-[#111111] px-5 py-2.5 transition-all duration-300 hover:bg-[#111111] hover:text-white"
+            style={{ fontWeight: 300, border: '0.5px solid #111111' }}
           >
             Pošalji upit
           </Link>
