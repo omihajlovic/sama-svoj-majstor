@@ -17,7 +17,7 @@ export default function ProjektiPage() {
   return (
     <>
       {/* Header */}
-      <div className="pt-40 pb-40" style={{ backgroundColor: '#f5f4f1' }}>
+      <div className="pt-32 pb-32" style={{ backgroundColor: '#f5f4f1' }}>
         <div className="max-w-[1440px] mx-auto px-16">
           <p
             className="font-outfit text-[14px] text-[#999999] mb-2"
