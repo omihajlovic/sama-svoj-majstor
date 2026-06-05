@@ -5,7 +5,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Header */}
-      <div className="pt-40 pb-16" style={{ backgroundColor: '#f5f4f1' }}>
+      <div className="pt-32 pb-32" style={{ backgroundColor: '#f5f4f1' }}>
         <div className="max-w-[1440px] mx-auto px-16">
           <p
             className="font-outfit text-[14px] text-[#999999] mb-2"
@@ -15,13 +15,13 @@ export default function BlogPage() {
           </p>
           <h1
             className="font-cormorant text-[#111111] mb-6"
-            style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.05 }}
+            style={{ fontWeight: 300, fontSize: '64px', lineHeight: 1.05 }}
           >
             Blog
           </h1>
           <p
-            className="font-outfit text-[14px] text-[#666666]"
-            style={{ fontWeight: 300, maxWidth: '480px', lineHeight: 1.7 }}
+            className="font-outfit text-[#666666]"
+            style={{ fontWeight: 300, fontSize: '16px', maxWidth: '480px', lineHeight: 1.7 }}
           >
             Saveti, inspiracija i priče iz prakse — za svakoga ko želi da uredi prostor pametno.
           </p>

@@ -42,7 +42,7 @@ export default function UslugePage() {
   return (
     <>
       {/* Header */}
-      <div className="pt-40 pb-16" style={{ backgroundColor: '#f5f4f1' }}>
+      <div className="pt-32 pb-32" style={{ backgroundColor: '#f5f4f1' }}>
         <div className="max-w-[1440px] mx-auto px-16">
           <p
             className="font-outfit text-[14px] text-[#999999] mb-2"
@@ -51,16 +51,17 @@ export default function UslugePage() {
             / Saradnja
           </p>
           <h1
-            className="font-cormorant text-[#111111]"
-            style={{
-              fontWeight: 300,
-              fontSize: 'clamp(30px, 5vw, 72px)',
-              lineHeight: 1.05,
-              maxWidth: '800px',
-            }}
+            className="font-cormorant text-[#111111] mb-6"
+            style={{ fontWeight: 300, fontSize: '64px', lineHeight: 1.05 }}
           >
-            Izaberi način saradnje koji ti najviše odgovara
+            Usluge
           </h1>
+          <p
+            className="font-outfit text-[#666666]"
+            style={{ fontWeight: 300, fontSize: '16px', maxWidth: '480px', lineHeight: 1.7 }}
+          >
+            Izaberi način saradnje koji ti najviše odgovara.
+          </p>
         </div>
       </div>
 
