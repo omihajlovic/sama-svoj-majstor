@@ -18,6 +18,7 @@ export default function ProjectsPreview() {
   const [isAnimating, setIsAnimating] = useState(false)
   const [direction, setDirection] = useState<'next' | 'prev'>('next')
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const touchStartX = useRef<number | null>(null)
 
   const getSlides = (idx: number): Project[] =>
     [0, 1, 2].map((o) => projekti[(idx + o) % total])
@@ -93,7 +94,7 @@ export default function ProjectsPreview() {
           <>
             {/* Permanent bottom gradient + text */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
-            <div className="absolute bottom-8 left-8 pointer-events-none">
+            <div className="absolute bottom-5 left-5 right-5 md:bottom-8 md:left-8 md:right-auto pointer-events-none">
               <p
                 className="font-outfit text-[11px] uppercase tracking-[0.12em] text-white/70 mb-2"
                 style={{ fontWeight: 300 }}
@@ -133,17 +134,16 @@ export default function ProjectsPreview() {
       <Link
         key={`${keyPrefix}-${project.id}`}
         href={`/projekti/${project.slug}`}
-        className="relative flex-shrink-0 group"
-        style={{ width: '50vw', height: '100%', cursor: 'pointer' }}
+        className="pp-active relative flex-shrink-0 group"
+        style={{ height: '100%', cursor: 'pointer' }}
       >
         {imageBlock}
       </Link>
     ) : (
       <div
         key={`${keyPrefix}-${project.id}-${idx}`}
-        className="relative flex-shrink-0"
+        className="pp-side relative flex-shrink-0"
         style={{
-          width: '25vw',
           height: '100%',
           opacity: 0.5,
           cursor: 'default',
@@ -156,7 +156,6 @@ export default function ProjectsPreview() {
   }
 
   const STRIP_STYLE: React.CSSProperties = {
-    paddingLeft: 'calc(max(0px, (100vw - 1440px) / 2) + 4rem)',
     gap: '14px',
     position: 'absolute',
     inset: 0,
@@ -166,8 +165,20 @@ export default function ProjectsPreview() {
   // ── Render ─────────────────────────────────────────────────────────────────
   return (
     <section style={{ backgroundColor: '#f5f4f1', overflow: 'hidden' }}>
+      <style>{`
+        .pp-strip { padding-left: 1.25rem; }
+        .pp-active { width: 82vw; }
+        .pp-side { width: 40vw; }
+        .pp-track { height: 440px; }
+        @media (min-width: 768px) {
+          .pp-strip { padding-left: calc(max(0px, (100vw - 1440px) / 2) + 4rem); }
+          .pp-active { width: 50vw; }
+          .pp-side { width: 25vw; }
+          .pp-track { height: 500px; }
+        }
+      `}</style>
       {/* Header — items-end aligns description + buttons to heading baseline */}
-      <div className="max-w-[1440px] mx-auto px-5 md:px-16 pt-24 pb-12">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16 pt-16 md:pt-24 pb-8 md:pb-12">
         <div className="flex items-end justify-between gap-8 flex-wrap">
           <div className="flex-1 min-w-0">
             <p
@@ -178,7 +189,7 @@ export default function ProjectsPreview() {
             </p>
             <h2
               className="font-cormorant text-[#111111]"
-              style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
+              style={{ fontWeight: 300, fontSize: 'clamp(34px, 6.25vw, 48px)', lineHeight: 1.1 }}
             >
               Svaki prostor ima svoju priču
             </h2>
@@ -229,10 +240,21 @@ export default function ProjectsPreview() {
       </div>
 
       {/* Carousel — two overlapping strips, crossfade + translate */}
-      <div style={{ position: 'relative', height: '500px' }}>
+      <div
+        className="pp-track"
+        style={{ position: 'relative', touchAction: 'pan-y' }}
+        onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX }}
+        onTouchEnd={(e) => {
+          if (touchStartX.current === null) return
+          const dx = e.changedTouches[0].clientX - touchStartX.current
+          touchStartX.current = null
+          if (Math.abs(dx) > 40) navigate(dx < 0 ? 'next' : 'prev')
+        }}
+      >
 
         {/* Outgoing strip (always rendered) */}
         <div
+          className="pp-strip"
           style={{
             ...STRIP_STYLE,
             opacity: isAnimating ? 0 : 1,
@@ -249,6 +271,7 @@ export default function ProjectsPreview() {
         {/* Incoming strip (rendered only during transition) */}
         {incomingIndex !== null && (
           <div
+            className="pp-strip"
             style={{
               ...STRIP_STYLE,
               opacity: inOpacity,
@@ -265,7 +288,7 @@ export default function ProjectsPreview() {
       </div>
 
       {/* CTA */}
-      <div className="text-center pt-12 pb-24">
+      <div className="text-center pt-10 md:pt-12 pb-16 md:pb-24">
         <Link
           href="/projekti"
           className="font-outfit text-[13px] text-[#111111] transition-opacity duration-300 hover:opacity-50"

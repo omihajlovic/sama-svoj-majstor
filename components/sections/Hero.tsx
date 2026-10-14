@@ -3,12 +3,12 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen grid grid-cols-1 md:grid-cols-2" style={{ backgroundColor: '#f5f4f1' }}>
+    <section className="relative md:min-h-screen grid grid-cols-1 md:grid-cols-2" style={{ backgroundColor: '#f5f4f1' }}>
       {/* Hero sentinel for Navbar IntersectionObserver */}
       <div id="hero-sentinel" className="absolute top-1 left-0 w-px h-px pointer-events-none" aria-hidden />
 
       {/* Left column */}
-      <div className="flex flex-col justify-center px-5 md:px-16 py-24 relative z-10" style={{ backgroundColor: '#f5f4f1' }}>
+      <div className="flex flex-col justify-center px-5 md:px-16 pt-28 pb-12 md:py-24 relative z-10" style={{ backgroundColor: '#f5f4f1' }}>
         <h1
           className="font-cormorant text-[#111111] mb-8"
           style={{
@@ -34,17 +34,17 @@ export default function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="flex items-center gap-8 mb-0 flex-wrap">
+        <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-8">
           <Link
             href="/projekti"
-            className="font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111]"
+            className="text-center font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111]"
             style={{ fontWeight: 300, border: '0.5px solid #111111' }}
           >
             Pogledaj projekte
           </Link>
           <Link
             href="/kontakt"
-            className="font-outfit text-[13px] tracking-[0.08em] text-[#111111] px-8 py-4 transition-all duration-300 hover:bg-[#111111] hover:text-white"
+            className="text-center font-outfit text-[13px] tracking-[0.08em] text-[#111111] px-8 py-4 transition-all duration-300 hover:bg-[#111111] hover:text-white"
             style={{ fontWeight: 300, border: '0.5px solid #111111' }}
           >
             Pošalji upit
@@ -54,7 +54,7 @@ export default function Hero() {
       </div>
 
       {/* Right column: full-height image to browser edge */}
-      <div className="relative min-h-[50vh] md:min-h-screen">
+      <div className="relative aspect-[4/5] md:aspect-auto md:min-h-screen">
         <Image
           src="/hero-image-02.jpg"
           alt="Dizajner enterijera"

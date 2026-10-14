@@ -87,7 +87,7 @@ export default function SingleProjekatPage({ params }: Props) {
       </div>
 
       {/* Problem + Rešenje */}
-      <section className="py-24" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-16 md:py-24" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-[1440px] mx-auto px-5 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <h2
@@ -121,7 +121,7 @@ export default function SingleProjekatPage({ params }: Props) {
       </section>
 
       {/* Gallery */}
-      <section className="pb-24" style={{ backgroundColor: '#ffffff' }}>
+      <section className="pb-16 md:pb-24" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <h2
             className="font-cormorant text-[#111111] mb-10"
@@ -146,7 +146,7 @@ export default function SingleProjekatPage({ params }: Props) {
       </section>
 
       {/* CTA */}
-      <section className="py-20 text-center" style={{ backgroundColor: '#f5f4f1' }}>
+      <section className="py-14 md:py-20 text-center" style={{ backgroundColor: '#f5f4f1' }}>
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <h2
             className="font-cormorant text-[#111111] mb-6"

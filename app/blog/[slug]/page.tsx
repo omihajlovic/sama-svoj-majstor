@@ -34,8 +34,8 @@ export default function SingleBlogPage({ params }: Props) {
       </div>
 
       {/* Article header */}
-      <div className="pt-10 pb-16" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-[680px] mx-auto px-8">
+      <div className="pt-8 md:pt-10 pb-8 md:pb-16" style={{ backgroundColor: '#ffffff' }}>
+        <div className="max-w-[680px] mx-auto px-5 md:px-8">
           <p
             className="font-outfit text-[12px] text-[#999999] mb-6"
             style={{ fontWeight: 300 }}
@@ -52,7 +52,7 @@ export default function SingleBlogPage({ params }: Props) {
       </div>
 
       {/* Hero image */}
-      <div className="relative w-full mb-16" style={{ height: '60vh', minHeight: '400px' }}>
+      <div className="relative w-full mb-10 md:mb-16" style={{ height: '60vh', minHeight: '400px' }}>
         <Image
           src={post.image}
           alt={post.title}
@@ -64,7 +64,7 @@ export default function SingleBlogPage({ params }: Props) {
       </div>
 
       {/* Article body */}
-      <article className="max-w-[680px] mx-auto px-8 pb-24">
+      <article className="max-w-[680px] mx-auto px-5 md:px-8 pb-16 md:pb-24">
         {paragraphs.map((para, i) => {
           if (para.startsWith('**') && para.endsWith('**')) {
             return (

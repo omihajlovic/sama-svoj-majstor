@@ -23,7 +23,7 @@ const services = [
 
 export default function PainPointsServices() {
   return (
-    <section className="py-24" style={{ backgroundColor: '#ffffff' }}>
+    <section className="py-16 md:py-24" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: '5rem' }}>
 
@@ -31,7 +31,7 @@ export default function PainPointsServices() {
           <div>
             <h2
               className="font-cormorant text-[#111111] mb-12"
-              style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
+              style={{ fontWeight: 300, fontSize: 'clamp(34px, 6.25vw, 48px)', lineHeight: 1.1 }}
             >
               Ako se pronalaziš u
               <br />
@@ -58,7 +58,7 @@ export default function PainPointsServices() {
           <div>
             <h2
               className="font-cormorant text-[#111111] mb-12"
-              style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
+              style={{ fontWeight: 300, fontSize: 'clamp(34px, 6.25vw, 48px)', lineHeight: 1.1 }}
             >
               Kako mogu da ti pomognem
             </h2>

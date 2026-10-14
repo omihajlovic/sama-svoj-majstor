@@ -50,7 +50,7 @@ export default function KontaktPage() {
 
   return (
     <>
-      <div className="pt-40 pb-24" style={{ backgroundColor: '#ffffff' }}>
+      <div className="pt-28 md:pt-40 pb-16 md:pb-24" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           {/* Heading */}
           <div className="text-center mb-16">
@@ -58,7 +58,7 @@ export default function KontaktPage() {
               className="font-cormorant text-[#111111] mb-4"
               style={{
                 fontWeight: 300,
-                fontSize: '48px',
+                fontSize: 'clamp(34px, 6.25vw, 48px)',
                 lineHeight: 1.05,
               }}
             >

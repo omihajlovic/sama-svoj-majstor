@@ -10,6 +10,10 @@ export default function FinalCTA() {
   useEffect(() => {
     const handleScroll = () => {
       if (!bgRef.current || !sectionRef.current) return
+      if (window.innerWidth < 768) {
+        bgRef.current.style.transform = 'none'
+        return
+      }
       const rect = sectionRef.current.getBoundingClientRect()
       // Background moves at 30% of scroll speed → content scrolls faster → parallax
       const offset = -rect.top * 0.3
@@ -66,10 +70,10 @@ export default function FinalCTA() {
       <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.35)' }} />
 
       {/* Content — centered */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-5 md:px-16 py-24 text-center">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-5 md:px-16 py-16 md:py-24 text-center">
         <h2
           className="font-cormorant text-white mb-6"
-          style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1, textShadow: '0 2px 8px rgba(0,0,0,0.6), 0 1px 2px rgba(0,0,0,0.8)' }}
+          style={{ fontWeight: 300, fontSize: 'clamp(34px, 6.25vw, 48px)', lineHeight: 1.1, textShadow: '0 2px 8px rgba(0,0,0,0.6), 0 1px 2px rgba(0,0,0,0.8)' }}
         >
           Imaš prostor koji želiš da urediš?
         </h2>

@@ -45,11 +45,11 @@ export default function FAQ({ items = faqItems }: FAQProps) {
           style={{ borderBottom: '0.5px solid rgba(0,0,0,0.1)' }}
         >
           <button
-            className="w-full flex items-start justify-between py-6 text-left transition-opacity duration-300 hover:opacity-60"
+            className="w-full flex items-start justify-between py-5 md:py-6 text-left transition-opacity duration-300 hover:opacity-60"
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
           >
             <span
-              className="font-cormorant text-[24px] text-[#111111] pr-8"
+              className="font-cormorant text-[20px] md:text-[24px] text-[#111111] pr-6 md:pr-8"
               style={{ fontWeight: 300, fontStyle: 'italic' }}
             >
               {item.question}

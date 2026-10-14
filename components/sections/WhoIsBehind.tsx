@@ -6,7 +6,7 @@ export default function WhoIsBehind() {
     <section style={{ backgroundColor: '#ffffff' }}>
       <div className="grid grid-cols-1 md:grid-cols-2" style={{ minHeight: '600px' }}>
         {/* Left: content */}
-        <div className="flex flex-col justify-center px-5 md:px-16 py-24">
+        <div className="flex flex-col justify-center px-5 md:px-16 py-16 md:py-24">
           <p
             className="font-outfit text-[14px] text-[#999999] mb-2"
             style={{ fontWeight: 300 }}
@@ -17,7 +17,7 @@ export default function WhoIsBehind() {
             className="font-cormorant text-[#111111] mb-8"
             style={{
               fontWeight: 300,
-              fontSize: '48px',
+              fontSize: 'clamp(34px, 6.25vw, 48px)',
               lineHeight: 1.15,
             }}
           >
@@ -40,7 +40,7 @@ export default function WhoIsBehind() {
 
           <Link
             href="/kontakt"
-            className="inline-block font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111] mb-4 self-start"
+            className="text-center md:inline-block font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111] mb-4 md:self-start"
             style={{ fontWeight: 300, border: '0.5px solid #111111' }}
           >
             Pošalji upit

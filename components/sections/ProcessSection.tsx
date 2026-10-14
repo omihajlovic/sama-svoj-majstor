@@ -59,7 +59,7 @@ export default function ProcessSection() {
   }, [])
 
   return (
-    <section className="py-24" style={{ backgroundColor: '#111111' }}>
+    <section className="py-16 md:py-24" style={{ backgroundColor: '#111111' }}>
       <style>{`
         .step-item {
           opacity: 0;
@@ -93,7 +93,7 @@ export default function ProcessSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 mb-20 gap-8">
           <h2
             className="font-cormorant text-white"
-            style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
+            style={{ fontWeight: 300, fontSize: 'clamp(34px, 6.25vw, 48px)', lineHeight: 1.1 }}
           >
             Kako izgleda
             <br />

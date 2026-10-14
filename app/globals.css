@@ -9,6 +9,12 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+a, button {
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -40,6 +46,12 @@ body {
   }
   .border-hairline-white-top {
     border-top: 0.5px solid rgba(255, 255, 255, 0.1);
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
   .font-light-300 {
     font-weight: 300;

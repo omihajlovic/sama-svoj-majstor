@@ -17,7 +17,7 @@ export default function ProjektiPage() {
   return (
     <>
       {/* Header */}
-      <div className="pt-32 pb-32" style={{ backgroundColor: '#f5f4f1' }}>
+      <div className="pt-28 pb-16 md:pt-32 md:pb-32" style={{ backgroundColor: '#f5f4f1' }}>
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <p
             className="font-outfit text-[14px] text-[#999999] mb-2"
@@ -27,7 +27,7 @@ export default function ProjektiPage() {
           </p>
           <h1
             className="font-cormorant text-[#111111] mb-6"
-            style={{ fontWeight: 300, fontSize: '64px', lineHeight: 1.05 }}
+            style={{ fontWeight: 300, fontSize: 'clamp(44px, 8.4vw, 64px)', lineHeight: 1.05 }}
           >
             Projekti
           </h1>
@@ -46,12 +46,12 @@ export default function ProjektiPage() {
         style={{ backgroundColor: '#ffffff', borderBottom: '0.5px solid rgba(0,0,0,0.1)' }}
       >
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
-          <div className="flex gap-2 py-4 overflow-x-auto">
+          <div className="no-scrollbar flex gap-2 py-3 md:py-4 overflow-x-auto -mx-5 px-5 md:mx-0 md:px-0">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className="font-outfit text-[12px] tracking-[0.06em] px-5 py-2 whitespace-nowrap transition-all duration-300"
+                className="font-outfit text-[12px] tracking-[0.06em] px-5 py-3 md:py-2 whitespace-nowrap flex-shrink-0 transition-all duration-300"
                 style={{
                   fontWeight: 300,
                   backgroundColor: activeCategory === cat ? '#111111' : 'transparent',
@@ -67,7 +67,7 @@ export default function ProjektiPage() {
       </div>
 
       {/* Grid */}
-      <div className="py-20" style={{ backgroundColor: '#ffffff' }}>
+      <div className="py-14 md:py-20" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
             {filtered.map((project) => (
@@ -77,7 +77,7 @@ export default function ProjektiPage() {
 
           {filtered.length === 0 && (
             <p
-              className="font-outfit text-[14px] text-[#999999] text-center py-20"
+              className="font-outfit text-[14px] text-[#999999] text-center py-14 md:py-20"
               style={{ fontWeight: 300 }}
             >
               Nema projekata u ovoj kategoriji.

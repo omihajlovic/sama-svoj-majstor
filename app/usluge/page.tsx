@@ -42,7 +42,7 @@ export default function UslugePage() {
   return (
     <>
       {/* Header */}
-      <div className="pt-32 pb-32" style={{ backgroundColor: '#f5f4f1' }}>
+      <div className="pt-28 pb-16 md:pt-32 md:pb-32" style={{ backgroundColor: '#f5f4f1' }}>
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <p
             className="font-outfit text-[14px] text-[#999999] mb-2"
@@ -52,7 +52,7 @@ export default function UslugePage() {
           </p>
           <h1
             className="font-cormorant text-[#111111] mb-6"
-            style={{ fontWeight: 300, fontSize: '64px', lineHeight: 1.05 }}
+            style={{ fontWeight: 300, fontSize: 'clamp(44px, 8.4vw, 64px)', lineHeight: 1.05 }}
           >
             Usluge
           </h1>
@@ -71,7 +71,7 @@ export default function UslugePage() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="py-20"
+              className="py-14 md:py-20"
               style={{ borderBottom: '0.5px solid rgba(0,0,0,0.1)' }}
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -127,7 +127,7 @@ export default function UslugePage() {
                       Cena
                     </p>
                     <p
-                      className="font-cormorant text-[#111111] mb-10"
+                      className="font-cormorant text-[#111111] mb-6 md:mb-10"
                       style={{ fontWeight: 300, fontSize: '36px' }}
                     >
                       {service.price}
@@ -135,7 +135,7 @@ export default function UslugePage() {
                   </div>
                   <Link
                     href="/kontakt"
-                    className="inline-block font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111] self-start"
+                    className="text-center md:inline-block font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111] md:self-start"
                     style={{ fontWeight: 300, border: '0.5px solid #111111' }}
                   >
                     {service.cta}

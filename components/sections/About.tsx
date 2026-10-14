@@ -2,7 +2,7 @@ import StatsCounter from '@/components/StatsCounter'
 
 export default function About() {
   return (
-    <section className="py-24" style={{ backgroundColor: '#ffffff' }}>
+    <section className="py-16 md:py-24" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         {/* Top: tag above heading, both left-aligned */}
         <div className="mb-8">
@@ -14,7 +14,7 @@ export default function About() {
           </p>
           <h2
             className="font-cormorant text-[#111111]"
-            style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.2 }}
+            style={{ fontWeight: 300, fontSize: 'clamp(34px, 6.25vw, 48px)', lineHeight: 1.2 }}
           >
             Novinar po obrazovanju, dizajner po pozivu.
             <br />
@@ -23,10 +23,7 @@ export default function About() {
         </div>
 
         {/* Mid: two paragraphs flush with heading */}
-        <div
-          className="grid mb-20"
-          style={{ gridTemplateColumns: '1fr 1fr', gap: '4rem' }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-16 mb-12 md:mb-20">
           <p
             className="font-outfit text-[#666666]"
             style={{ fontWeight: 300, fontSize: '16px', lineHeight: 1.8 }}
@@ -43,8 +40,6 @@ export default function About() {
 
       </div>
 
-      {/* Stats sit outside the px-5 md:px-16 container so their own paddingLeft: 4rem
-          aligns the numbers flush with the heading and body text above */}
       <StatsCounter />
     </section>
   )

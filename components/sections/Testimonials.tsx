@@ -28,12 +28,12 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-24" style={{ backgroundColor: '#f5f4f1' }}>
+    <section className="py-16 md:py-24" style={{ backgroundColor: '#f5f4f1' }}>
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left: sticky title */}
-          <div>
-            <div className="sticky top-24">
+          <div className="mb-8 md:mb-0">
+            <div className="md:sticky md:top-24">
               <p
                 className="font-outfit text-[14px] text-[#999999] mb-2"
                 style={{ fontWeight: 300 }}
@@ -42,7 +42,7 @@ export default function Testimonials() {
               </p>
               <h2
                 className="font-cormorant text-[#111111]"
-                style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
+                style={{ fontWeight: 300, fontSize: 'clamp(34px, 6.25vw, 48px)', lineHeight: 1.1 }}
               >
                 Šta klijenti kažu
               </h2>
@@ -61,7 +61,7 @@ export default function Testimonials() {
                   className="font-cormorant text-[#111111] mb-6"
                   style={{
                     fontWeight: 300,
-                    fontSize: '24px',
+                    fontSize: 'clamp(20px, 3.2vw, 24px)',
                     fontStyle: 'italic',
                     lineHeight: 1.5,
                   }}

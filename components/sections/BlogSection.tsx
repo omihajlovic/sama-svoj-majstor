@@ -4,7 +4,7 @@ import { blogPosts } from '@/data/blog'
 
 export default function BlogSection() {
   return (
-    <section className="py-24" style={{ backgroundColor: '#ffffff' }}>
+    <section className="py-16 md:py-24" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         {/* Header */}
         <div
@@ -13,7 +13,7 @@ export default function BlogSection() {
         >
           <h2
             className="font-cormorant text-[#111111]"
-            style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1 }}
+            style={{ fontWeight: 300, fontSize: 'clamp(34px, 6.25vw, 48px)', lineHeight: 1.1 }}
           >
             Blog
           </h2>

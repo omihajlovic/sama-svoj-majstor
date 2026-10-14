@@ -12,14 +12,11 @@ export default function BeforeAfterSection() {
   const prevIndex = (activeIndex - 1 + projekti.length) % projekti.length
 
   return (
-    <section className="py-24" style={{ backgroundColor: '#f5f4f1' }}>
+    <section className="py-16 md:py-24" style={{ backgroundColor: '#f5f4f1' }}>
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
-        <div
-          className="grid"
-          style={{ gridTemplateColumns: '1fr 2fr' }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr]">
           {/* Left column — pr gives breathing room without affecting grid split */}
-          <div className="flex flex-col justify-center py-4 pr-16">
+          <div className="flex flex-col justify-center py-4 mb-6 md:mb-0 md:pr-16">
             <p
               className="font-outfit text-[14px] text-[#999999] mb-2"
               style={{ fontWeight: 300 }}
@@ -71,18 +68,18 @@ export default function BeforeAfterSection() {
           </div>
 
           {/* Right: slider + nav below */}
-          <div>
+          <div className="min-w-0">
             {/* Slider */}
-            <div style={{ height: '520px' }}>
+            <div className="h-[420px] md:h-[520px]">
               <BeforeAfterSlider
                 beforeImage={featured.beforeImage}
                 afterImage={featured.afterImage}
-                height="520px"
+                height="100%"
               />
             </div>
 
             {/* Bottom bar: drag hint (left) + prev/next nav (right) */}
-            <div className="flex items-center justify-between mt-5">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0 mt-5">
 
               {/* Left: drag hint */}
               <div className="flex items-center gap-2">
@@ -96,7 +93,7 @@ export default function BeforeAfterSection() {
               </div>
 
               {/* Right: progress + prev/next */}
-              <div className="flex items-center gap-8">
+              <div className="flex items-center justify-between md:justify-start w-full md:w-auto gap-8">
                 <div className="flex items-center gap-6">
                   {/* Progress line */}
                   <div
@@ -117,17 +114,17 @@ export default function BeforeAfterSection() {
                   </span>
                 </div>
 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-1 md:gap-3">
                   <button
                     onClick={() => setActiveIndex(prevIndex)}
-                    className="font-outfit text-[12px] text-[#111111] transition-opacity duration-300 hover:opacity-50"
+                    className="font-outfit text-[12px] text-[#111111] px-2 py-3 md:p-0 transition-opacity duration-300 hover:opacity-50"
                     style={{ fontWeight: 300 }}
                   >
                     ← Prev
                   </button>
                   <button
                     onClick={() => setActiveIndex(nextIndex)}
-                    className="font-outfit text-[12px] text-[#111111] transition-opacity duration-300 hover:opacity-50"
+                    className="font-outfit text-[12px] text-[#111111] px-2 py-3 md:p-0 transition-opacity duration-300 hover:opacity-50"
                     style={{ fontWeight: 300 }}
                   >
                     Next →

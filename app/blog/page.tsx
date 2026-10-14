@@ -5,7 +5,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Header */}
-      <div className="pt-32 pb-32" style={{ backgroundColor: '#f5f4f1' }}>
+      <div className="pt-28 pb-16 md:pt-32 md:pb-32" style={{ backgroundColor: '#f5f4f1' }}>
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <p
             className="font-outfit text-[14px] text-[#999999] mb-2"
@@ -15,7 +15,7 @@ export default function BlogPage() {
           </p>
           <h1
             className="font-cormorant text-[#111111] mb-6"
-            style={{ fontWeight: 300, fontSize: '64px', lineHeight: 1.05 }}
+            style={{ fontWeight: 300, fontSize: 'clamp(44px, 8.4vw, 64px)', lineHeight: 1.05 }}
           >
             Blog
           </h1>
@@ -29,7 +29,7 @@ export default function BlogPage() {
       </div>
 
       {/* Posts grid */}
-      <div className="py-20" style={{ backgroundColor: '#ffffff' }}>
+      <div className="py-14 md:py-20" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {blogPosts.map((post) => (

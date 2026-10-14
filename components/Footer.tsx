@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer style={{ backgroundColor: '#111111' }}>
       {/* Top section */}
-      <div className="max-w-[1440px] mx-auto px-5 md:px-16 pt-20 pb-12 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16 pt-16 md:pt-20 pb-12 grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Left: Logo + tagline */}
         <div>
           <Link
@@ -34,7 +34,7 @@ export default function Footer() {
           >
             Navigacija
           </p>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-1 md:gap-3">
             {[
               { href: '/', label: 'Home' },
               { href: '/projekti', label: 'Projekti' },
@@ -45,7 +45,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-outfit text-[13px] text-white transition-opacity duration-300 hover:opacity-50"
+                className="py-2 md:py-0 font-outfit text-[13px] text-white transition-opacity duration-300 hover:opacity-50"
                 style={{ fontWeight: 300 }}
               >
                 {link.label}
@@ -62,10 +62,10 @@ export default function Footer() {
           >
             Kontakt
           </p>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-1 md:gap-3">
             <a
               href="mailto:hello@samasvojmajstor.rs"
-              className="font-outfit text-[13px] text-white transition-opacity duration-300 hover:opacity-50"
+              className="py-2 md:py-0 font-outfit text-[13px] text-white transition-opacity duration-300 hover:opacity-50"
               style={{ fontWeight: 300 }}
             >
               hello@samasvojmajstor.rs
@@ -74,7 +74,7 @@ export default function Footer() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-outfit text-[13px] text-white transition-opacity duration-300 hover:opacity-50"
+              className="py-2 md:py-0 font-outfit text-[13px] text-white transition-opacity duration-300 hover:opacity-50"
               style={{ fontWeight: 300 }}
             >
               Instagram →
@@ -93,7 +93,7 @@ export default function Footer() {
             className="font-cormorant text-white leading-none"
             style={{
               fontWeight: 300,
-              fontSize: '64px',
+              fontSize: 'clamp(44px, 8.4vw, 64px)',
               letterSpacing: '-0.02em',
             }}
           >

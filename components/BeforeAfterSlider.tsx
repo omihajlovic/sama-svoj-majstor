@@ -137,7 +137,7 @@ export default function BeforeAfterSlider({
     <div
       ref={containerRef}
       className="relative w-full overflow-hidden select-none cursor-col-resize"
-      style={{ height }}
+      style={{ height, touchAction: 'pan-y' }}
       onMouseDown={handleMouseDown}
       onTouchStart={handleTouchStart}
     >
