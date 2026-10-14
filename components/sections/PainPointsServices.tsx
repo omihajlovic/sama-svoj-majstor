@@ -77,7 +77,7 @@ export default function PainPointsServices() {
                   <div>
                     <h3
                       className="font-cormorant text-[#111111] mb-3"
-                      style={{ fontWeight: 300, fontSize: '36px', lineHeight: 1.1 }}
+                      style={{ fontWeight: 300, fontSize: 'clamp(26px, 4.7vw, 36px)', lineHeight: 1.1 }}
                     >
                       {service.name}
                     </h3>

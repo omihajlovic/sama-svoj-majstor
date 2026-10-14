@@ -25,7 +25,7 @@ export default function BeforeAfterSection() {
             </p>
             <h3
               className="font-cormorant text-[#111111] mb-1"
-              style={{ fontWeight: 300, fontSize: '32px', lineHeight: 1.15 }}
+              style={{ fontWeight: 300, fontSize: 'clamp(28px, 4.2vw, 32px)', lineHeight: 1.15 }}
             >
               {featured.title}
             </h3>
@@ -48,7 +48,7 @@ export default function BeforeAfterSection() {
             </div>
 
             <p
-              className="font-outfit text-[13px] text-[#666666] mb-8"
+              className="font-outfit text-[15px] md:text-[13px] text-[#666666] mb-8"
               style={{ fontWeight: 300, lineHeight: 1.7 }}
             >
               Svaki prostor ima potencijal. Pogledaj kako izgledaju transformacije pre i posle — od prvog stanja do finalnog rezultata.

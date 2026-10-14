@@ -102,7 +102,7 @@ export default function ProjectsPreview() {
                 {project.category}
               </p>
               <h3
-                className="font-cormorant text-white text-[28px]"
+                className="font-cormorant text-white text-[24px] md:text-[28px]"
                 style={{ fontWeight: 300, lineHeight: 1.1 }}
               >
                 {project.title}

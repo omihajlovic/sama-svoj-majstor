@@ -132,7 +132,7 @@ export default function ProcessSection() {
                 </p>
                 <h3
                   className="font-cormorant text-white"
-                  style={{ fontWeight: 300, fontSize: '28px', lineHeight: 1.2 }}
+                  style={{ fontWeight: 300, fontSize: 'clamp(24px, 3.65vw, 28px)', lineHeight: 1.2 }}
                 >
                   {step.title}
                 </h3>

@@ -44,7 +44,7 @@ export default function SingleBlogPage({ params }: Props) {
           </p>
           <h1
             className="font-cormorant text-[#111111] mb-8"
-            style={{ fontWeight: 300, fontSize: 'clamp(32px, 5vw, 56px)', lineHeight: 1.08 }}
+            style={{ fontWeight: 300, fontSize: 'clamp(36px, 5vw, 56px)', lineHeight: 1.08 }}
           >
             {post.title}
           </h1>
@@ -71,7 +71,7 @@ export default function SingleBlogPage({ params }: Props) {
               <h3
                 key={i}
                 className="font-cormorant text-[#111111] mb-4 mt-10"
-                style={{ fontWeight: 300, fontSize: '28px' }}
+                style={{ fontWeight: 300, fontSize: 'clamp(24px, 3.65vw, 28px)' }}
               >
                 {para.replace(/\*\*/g, '')}
               </h3>
@@ -106,7 +106,7 @@ export default function SingleBlogPage({ params }: Props) {
         >
           <h3
             className="font-cormorant text-[#111111] mb-4"
-            style={{ fontWeight: 300, fontSize: '28px' }}
+            style={{ fontWeight: 300, fontSize: 'clamp(24px, 3.65vw, 28px)' }}
           >
             Imaš pitanja o uređenju svog prostora?
           </h3>
