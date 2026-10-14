@@ -3,7 +3,7 @@ import StatsCounter from '@/components/StatsCounter'
 export default function About() {
   return (
     <section className="py-24" style={{ backgroundColor: '#ffffff' }}>
-      <div className="max-w-[1440px] mx-auto px-16">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         {/* Top: tag above heading, both left-aligned */}
         <div className="mb-8">
           <p
@@ -43,7 +43,7 @@ export default function About() {
 
       </div>
 
-      {/* Stats sit outside the px-16 container so their own paddingLeft: 4rem
+      {/* Stats sit outside the px-5 md:px-16 container so their own paddingLeft: 4rem
           aligns the numbers flush with the heading and body text above */}
       <StatsCounter />
     </section>

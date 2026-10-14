@@ -46,61 +46,40 @@ function Counter({ target }: { target: number }) {
 
 export default function StatsCounter() {
   return (
-    // max-w + auto margins mirror the container used in About.tsx so the
-    // border-top and column borders align with the section content above.
-    <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+    <div className="max-w-[1440px] mx-auto">
       <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr',
-          borderTop: '0.5px solid rgba(0,0,0,0.1)',
-        }}
+        className="grid grid-cols-1 md:grid-cols-3"
+        style={{ borderTop: '0.5px solid rgba(0,0,0,0.1)' }}
       >
         {stats.map((stat, i) => (
           <div
             key={stat.label}
+            className={`
+              py-10 px-5 md:py-10
+              ${i === 0 ? 'md:pl-16 md:pr-10' : i === stats.length - 1 ? 'md:pl-10 md:pr-16' : 'md:px-10'}
+              ${i < stats.length - 1 ? 'border-b md:border-b-0 md:border-r' : ''}
+            `}
             style={{
-              paddingTop: '2.5rem',
-              paddingBottom: '2.5rem',
-              paddingLeft: i === 0 ? '4rem' : '2.5rem',
-              paddingRight: i === stats.length - 1 ? '4rem' : '0',
-              borderRight: i < stats.length - 1 ? '0.5px solid rgba(0,0,0,0.1)' : 'none',
+              borderColor: 'rgba(0,0,0,0.1)',
             }}
           >
-            {/* Animated number + static suffix */}
             <div
-              style={{
-                fontSize: '56px',
-                fontFamily: 'var(--font-cormorant)',
-                fontWeight: 300,
-                lineHeight: 1,
-                color: '#111111',
-              }}
+              className="font-cormorant text-[#111111]"
+              style={{ fontSize: 'clamp(40px, 5vw, 56px)', fontWeight: 300, lineHeight: 1 }}
             >
               <Counter target={stat.number} />{stat.suffix}
             </div>
 
-            {/* Label */}
             <div
-              style={{
-                fontSize: '15px',
-                fontWeight: 400,
-                color: '#111111',
-                marginTop: '1rem',
-                marginBottom: '0.5rem',
-              }}
+              className="font-outfit text-[#111111]"
+              style={{ fontSize: '15px', fontWeight: 400, marginTop: '1rem', marginBottom: '0.5rem' }}
             >
               {stat.label}
             </div>
 
-            {/* Description */}
             <div
-              style={{
-                fontSize: '15px',
-                fontWeight: 300,
-                color: '#888888',
-                lineHeight: 1.7,
-              }}
+              className="font-outfit text-[#888888]"
+              style={{ fontSize: '15px', fontWeight: 300, lineHeight: 1.7 }}
             >
               {stat.description}
             </div>

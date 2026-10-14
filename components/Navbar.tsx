@@ -52,7 +52,7 @@ export default function Navbar() {
           boxShadow: scrolled ? '0 1px 0 rgba(0,0,0,0.06)' : 'none',
         }}
       >
-        <div className="max-w-[1440px] mx-auto px-16 flex items-center justify-between h-16">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16 flex items-center justify-between h-16">
           <Link
             href="/"
             className="font-outfit text-[15px] tracking-[0.04em] text-[#111111] transition-opacity duration-300 hover:opacity-50"

@@ -6,7 +6,7 @@ export default function WhoIsBehind() {
     <section style={{ backgroundColor: '#ffffff' }}>
       <div className="grid grid-cols-1 md:grid-cols-2" style={{ minHeight: '600px' }}>
         {/* Left: content */}
-        <div className="flex flex-col justify-center px-16 py-24">
+        <div className="flex flex-col justify-center px-5 md:px-16 py-24">
           <p
             className="font-outfit text-[14px] text-[#999999] mb-2"
             style={{ fontWeight: 300 }}

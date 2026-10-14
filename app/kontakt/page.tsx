@@ -51,7 +51,7 @@ export default function KontaktPage() {
   return (
     <>
       <div className="pt-40 pb-24" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-[1440px] mx-auto px-16">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           {/* Heading */}
           <div className="text-center mb-16">
             <h1

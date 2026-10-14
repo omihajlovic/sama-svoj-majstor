@@ -23,7 +23,7 @@ export default function SingleProjekatPage({ params }: Props) {
     <>
       {/* Breadcrumb + header */}
       <div className="pt-36 pb-16" style={{ backgroundColor: '#f5f4f1' }}>
-        <div className="max-w-[1440px] mx-auto px-16">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <div className="flex items-center gap-3 mb-8">
             <Link
               href="/projekti"
@@ -88,7 +88,7 @@ export default function SingleProjekatPage({ params }: Props) {
 
       {/* Problem + Rešenje */}
       <section className="py-24" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-[1440px] mx-auto px-16 grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <h2
               className="font-cormorant text-[#111111] mb-6"
@@ -122,7 +122,7 @@ export default function SingleProjekatPage({ params }: Props) {
 
       {/* Gallery */}
       <section className="pb-24" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-[1440px] mx-auto px-16">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <h2
             className="font-cormorant text-[#111111] mb-10"
             style={{ fontWeight: 300, fontSize: '36px' }}
@@ -147,7 +147,7 @@ export default function SingleProjekatPage({ params }: Props) {
 
       {/* CTA */}
       <section className="py-20 text-center" style={{ backgroundColor: '#f5f4f1' }}>
-        <div className="max-w-[1440px] mx-auto px-16">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <h2
             className="font-cormorant text-[#111111] mb-6"
             style={{ fontWeight: 300, fontSize: 'clamp(28px, 3vw, 42px)' }}
@@ -180,7 +180,7 @@ export default function SingleProjekatPage({ params }: Props) {
       <section style={{ borderTop: '0.5px solid rgba(0,0,0,0.1)', backgroundColor: '#ffffff' }}>
         <Link
           href={`/projekti/${nextProject.slug}`}
-          className="block max-w-[1440px] mx-auto px-16 py-10 flex items-center justify-between group transition-opacity duration-300 hover:opacity-50"
+          className="block max-w-[1440px] mx-auto px-5 md:px-16 py-10 flex items-center justify-between group transition-opacity duration-300 hover:opacity-50"
         >
           <div>
             <p className="font-outfit text-[11px] uppercase tracking-[0.12em] text-[#999999] mb-2" style={{ fontWeight: 300 }}>

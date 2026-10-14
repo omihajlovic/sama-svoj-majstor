@@ -66,7 +66,7 @@ export default function FinalCTA() {
       <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.35)' }} />
 
       {/* Content — centered */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-16 py-24 text-center">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-5 md:px-16 py-24 text-center">
         <h2
           className="font-cormorant text-white mb-6"
           style={{ fontWeight: 300, fontSize: '48px', lineHeight: 1.1, textShadow: '0 2px 8px rgba(0,0,0,0.6), 0 1px 2px rgba(0,0,0,0.8)' }}

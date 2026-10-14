@@ -6,7 +6,7 @@ export default function BlogPage() {
     <>
       {/* Header */}
       <div className="pt-32 pb-32" style={{ backgroundColor: '#f5f4f1' }}>
-        <div className="max-w-[1440px] mx-auto px-16">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <p
             className="font-outfit text-[14px] text-[#999999] mb-2"
             style={{ fontWeight: 300 }}
@@ -30,7 +30,7 @@ export default function BlogPage() {
 
       {/* Posts grid */}
       <div className="py-20" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-[1440px] mx-auto px-16">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {blogPosts.map((post) => (
               <BlogCard key={post.id} post={post} />

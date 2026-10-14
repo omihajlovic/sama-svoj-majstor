@@ -24,7 +24,7 @@ const services = [
 export default function PainPointsServices() {
   return (
     <section className="py-24" style={{ backgroundColor: '#ffffff' }}>
-      <div className="max-w-[1440px] mx-auto px-16">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: '5rem' }}>
 
           {/* Left: pain points */}

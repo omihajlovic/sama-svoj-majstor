@@ -8,7 +8,7 @@ export default function Hero() {
       <div id="hero-sentinel" className="absolute top-1 left-0 w-px h-px pointer-events-none" aria-hidden />
 
       {/* Left column */}
-      <div className="flex flex-col justify-center px-16 py-24 relative z-10" style={{ backgroundColor: '#f5f4f1' }}>
+      <div className="flex flex-col justify-center px-5 md:px-16 py-24 relative z-10" style={{ backgroundColor: '#f5f4f1' }}>
         <h1
           className="font-cormorant text-[#111111] mb-8"
           style={{

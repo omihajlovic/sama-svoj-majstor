@@ -22,7 +22,7 @@ export default function SingleBlogPage({ params }: Props) {
     <>
       {/* Back link */}
       <div className="pt-28 pb-0" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-[1440px] mx-auto px-16">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <Link
             href="/blog"
             className="font-outfit text-[13px] text-[#999999] transition-opacity duration-300 hover:opacity-50"

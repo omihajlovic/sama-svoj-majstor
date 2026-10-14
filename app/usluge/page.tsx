@@ -43,7 +43,7 @@ export default function UslugePage() {
     <>
       {/* Header */}
       <div className="pt-32 pb-32" style={{ backgroundColor: '#f5f4f1' }}>
-        <div className="max-w-[1440px] mx-auto px-16">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <p
             className="font-outfit text-[14px] text-[#999999] mb-2"
             style={{ fontWeight: 300 }}
@@ -67,7 +67,7 @@ export default function UslugePage() {
 
       {/* Services */}
       <div style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-[1440px] mx-auto px-16">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           {services.map((service, i) => (
             <div
               key={i}
@@ -147,7 +147,7 @@ export default function UslugePage() {
         </div>
 
         {/* Comparison note */}
-        <div className="max-w-[1440px] mx-auto px-16 py-16">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16 py-16">
           <p
             className="font-outfit text-[14px] text-[#666666] text-center"
             style={{ fontWeight: 300, maxWidth: '600px', margin: '0 auto', lineHeight: 1.8 }}

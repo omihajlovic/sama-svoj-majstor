@@ -167,7 +167,7 @@ export default function ProjectsPreview() {
   return (
     <section style={{ backgroundColor: '#f5f4f1', overflow: 'hidden' }}>
       {/* Header — items-end aligns description + buttons to heading baseline */}
-      <div className="max-w-[1440px] mx-auto px-16 pt-24 pb-12">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16 pt-24 pb-12">
         <div className="flex items-end justify-between gap-8 flex-wrap">
           <div className="flex-1 min-w-0">
             <p

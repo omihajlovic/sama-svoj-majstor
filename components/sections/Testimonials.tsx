@@ -29,7 +29,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section className="py-24" style={{ backgroundColor: '#f5f4f1' }}>
-      <div className="max-w-[1440px] mx-auto px-16">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left: sticky title */}
           <div>

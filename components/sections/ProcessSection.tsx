@@ -88,7 +88,7 @@ export default function ProcessSection() {
         }
       `}</style>
 
-      <div className="max-w-[1440px] mx-auto px-16">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         {/* Top */}
         <div className="grid grid-cols-1 md:grid-cols-2 mb-20 gap-8">
           <h2

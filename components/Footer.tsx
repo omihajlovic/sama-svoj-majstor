@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer style={{ backgroundColor: '#111111' }}>
       {/* Top section */}
-      <div className="max-w-[1440px] mx-auto px-16 pt-20 pb-12 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16 pt-20 pb-12 grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Left: Logo + tagline */}
         <div>
           <Link
@@ -84,7 +84,7 @@ export default function Footer() {
       </div>
 
       {/* Large brand name */}
-      <div className="max-w-[1440px] mx-auto px-16 pb-4">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16 pb-4">
         <div
           style={{ borderTop: '0.5px solid rgba(255,255,255,0.1)' }}
           className="pt-8"
@@ -103,7 +103,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="max-w-[1440px] mx-auto px-16 pb-8 flex justify-between items-center">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16 pb-8 flex justify-between items-center">
         <p
           className="font-outfit text-[12px]"
           style={{ fontWeight: 300, color: 'rgba(255,255,255,0.4)' }}
