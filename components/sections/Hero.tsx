@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import HeroImage from '@/components/HeroImage'
 import Link from 'next/link'
 
 export default function Hero() {
@@ -52,17 +52,8 @@ export default function Hero() {
 
       </div>
 
-      {/* Image: first on mobile, right column on desktop */}
-      <div className="order-1 md:order-2 relative h-[58vh] min-h-[380px] md:h-auto md:min-h-screen">
-        <Image
-          src="/hero-image-02.jpg"
-          alt="Dizajner enterijera"
-          fill
-          priority
-          className="object-cover object-[30%_center] md:object-center"
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-      </div>
+      {/* Image: first on mobile (with scroll parallax), right column on desktop */}
+      <HeroImage />
     </section>
   )
 }
