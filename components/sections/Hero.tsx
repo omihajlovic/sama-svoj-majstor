@@ -8,9 +8,9 @@ export default function Hero() {
       <div id="hero-sentinel" className="absolute top-1 left-0 w-px h-px pointer-events-none" aria-hidden />
 
       {/* Left column */}
-      <div className="flex flex-col justify-center px-5 md:px-16 pt-28 pb-12 md:py-24 relative z-10" style={{ backgroundColor: '#f5f4f1' }}>
+      <div className="order-2 md:order-1 flex flex-col justify-center px-5 md:px-16 pt-8 pb-12 md:py-24 relative z-10" style={{ backgroundColor: '#f5f4f1' }}>
         <h1
-          className="font-cormorant text-[#111111] mb-8"
+          className="font-cormorant text-[#111111] mb-5 md:mb-8"
           style={{
             fontWeight: 300,
             fontSize: 'clamp(42px, 5vw, 64px)',
@@ -23,10 +23,9 @@ export default function Hero() {
         </h1>
 
         <p
-          className="font-outfit text-[#666666] mb-10"
+          className="font-outfit text-[#666666] text-[16px] md:text-[18px] mb-8 md:mb-10"
           style={{
             fontWeight: 300,
-            fontSize: '18px',
             lineHeight: 1.7,
           }}
         >
@@ -53,15 +52,15 @@ export default function Hero() {
 
       </div>
 
-      {/* Right column: full-height image to browser edge */}
-      <div className="relative aspect-[4/5] md:aspect-auto md:min-h-screen">
+      {/* Image: first on mobile, right column on desktop */}
+      <div className="order-1 md:order-2 relative h-[58vh] min-h-[380px] md:h-auto md:min-h-screen">
         <Image
           src="/hero-image-02.jpg"
           alt="Dizajner enterijera"
           fill
           priority
-          className="object-cover object-center"
-          sizes="50vw"
+          className="object-cover object-[30%_center] md:object-center"
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>
     </section>
