@@ -134,7 +134,7 @@ export default function SingleProjekatPage({ params }: Props) {
               <div key={i} className="relative overflow-hidden" style={{ aspectRatio: '4/3' }}>
                 <Image
                   src={img}
-                  alt={`${project.title} — slika ${i + 1}`}
+                  alt={`${project.title}, slika ${i + 1}`}
                   fill
                   className="object-cover"
                   sizes="33vw"

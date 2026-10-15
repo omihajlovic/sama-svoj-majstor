@@ -29,7 +29,7 @@ export default function Hero() {
             lineHeight: 1.7,
           }}
         >
-          Od brzih saveta do kompletnog dizajna enterijera — prilagođeno tebi, tvom prostoru i tvojim mogućnostima.
+          Od brzih saveta do kompletnog dizajna enterijera, prilagođeno tebi, tvom prostoru i tvojim mogućnostima.
         </p>
 
         {/* CTAs */}

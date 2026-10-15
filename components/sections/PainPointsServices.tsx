@@ -12,10 +12,10 @@ const services = [
   {
     name: 'Brzi Saveti',
     tagline: 'Za konkretne odgovore',
-    description: 'Jednokratna konsultacija za jednu prostoriju — boje, nameštaj, raspored, materijali. Bez meseci čekanja.',
+    description: 'Jednokratna konsultacija za jednu prostoriju: boje, nameštaj, raspored i materijali. Bez meseci čekanja.',
     price: '45€',
     priceNote: 'po prostoriji',
-    duration: '5–7 dana',
+    duration: '5 do 7 dana',
     includes: [
       'Analiza fotografija i dimenzija prostora',
       'Preporuke za boje, materijale i nameštaj',
@@ -26,10 +26,10 @@ const services = [
   {
     name: 'Kompletan Dizajn',
     tagline: 'Od ideje do realizacije',
-    description: 'Ceo proces vođen od prvog razgovora do finalnog rezultata — idealno za nove stanove i rekonstrukcije.',
+    description: 'Ceo proces vođen od prvog razgovora do finalnog rezultata. Idealno za nove stanove i rekonstrukcije.',
     price: 'Po dogovoru',
     priceNote: 'prema kvadraturi',
-    duration: '4–8 nedelja',
+    duration: '4 do 8 nedelja',
     includes: [
       'Idejno rešenje, moodboard i 3D vizualizacija',
       'Kompletna specifikacija materijala',
@@ -95,7 +95,7 @@ export default function PainPointsServices() {
             Dva načina, <em style={{ fontStyle: 'italic' }}>jedan cilj</em>
           </h2>
           <p className="font-outfit text-[16px] text-[#666666]" style={{ fontWeight: 300, lineHeight: 1.7 }}>
-            Ako se prepoznaješ bar u jednoj od ovih situacija — izaberi koliko podrške ti treba, a ja ću se pobrinuti za ostalo.
+            Ako se prepoznaješ bar u jednoj od ovih situacija, izaberi koliko podrške ti treba, a ja ću se pobrinuti za ostalo.
           </p>
         </div>
 
@@ -140,7 +140,7 @@ export default function PainPointsServices() {
                 <ul className="space-y-3 mb-10">
                   {s.includes.map((item) => (
                     <li key={item} className="flex items-start gap-3 font-outfit text-[15px]" style={{ fontWeight: 300, color: muted }}>
-                      <span style={{ color: label }}>—</span>
+                      <span className="inline-block w-3 h-px mt-[0.75em] flex-shrink-0" style={{ backgroundColor: label }} aria-hidden />
                       {item}
                     </li>
                   ))}

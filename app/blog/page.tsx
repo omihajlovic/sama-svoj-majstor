@@ -23,7 +23,7 @@ export default function BlogPage() {
             className="font-outfit text-[#666666]"
             style={{ fontWeight: 300, fontSize: '16px', maxWidth: '480px', lineHeight: 1.7 }}
           >
-            Saveti, inspiracija i priče iz prakse — za svakoga ko želi da uredi prostor pametno.
+            Saveti, inspiracija i priče iz prakse za svakoga ko želi da uredi prostor pametno.
           </p>
         </div>
       </div>

@@ -51,7 +51,7 @@ export default function BeforeAfterSection() {
               className="font-outfit text-[15px] text-[#666666] mb-8"
               style={{ fontWeight: 300, lineHeight: 1.7 }}
             >
-              Svaki prostor ima potencijal. Pogledaj kako izgledaju transformacije pre i posle — od prvog stanja do finalnog rezultata.
+              Svaki prostor ima potencijal. Pogledaj kako izgledaju transformacije pre i posle, od prvog stanja do finalnog rezultata.
             </p>
 
             <Link

@@ -9,18 +9,18 @@ export default function Footer() {
         <div>
           <Link
             href="/"
-            className="font-outfit text-[15px] tracking-[0.04em] text-white block mb-3 transition-opacity duration-300 hover:opacity-50"
+            className="font-outfit text-[20px] tracking-[0.02em] text-white block mb-4 transition-opacity duration-300 hover:opacity-50"
             style={{ fontWeight: 300 }}
           >
             Sama Svoj Majstor
           </Link>
           <p
-            className="font-outfit text-[13px] leading-relaxed"
-            style={{ fontWeight: 300, color: 'rgba(255,255,255,0.5)' }}
+            className="font-outfit text-[15px] max-w-[340px]"
+            style={{ fontWeight: 300, lineHeight: 1.7, color: 'rgba(255,255,255,0.65)' }}
           >
-            Pomažem ti da urediš prostor u kome ćeš zaista uživati — od brzih saveta do kompletnog dizajna enterijera.
+            Pomažem ti da urediš prostor u kome ćeš zaista uživati, od brzih saveta do kompletnog dizajna enterijera.
           </p>
-          {/* Email input placeholder — commented out for later */}
+          {/* Email input placeholder, commented out for later */}
           {/* <div className="mt-6">
             <input type="email" placeholder="Tvoj email" className="..." />
           </div> */}
@@ -29,14 +29,14 @@ export default function Footer() {
         {/* Middle: Navigation */}
         <div>
           <p
-            className="font-outfit text-[12px] uppercase tracking-[0.12em] mb-5"
+            className="font-outfit text-[12px] uppercase tracking-[0.12em] mb-4 md:mb-6"
             style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
           >
             Navigacija
           </p>
-          <div className="flex flex-col gap-1 md:gap-3">
+          <div className="flex flex-col gap-1 md:gap-4">
             {[
-              { href: '/', label: 'Home' },
+              { href: '/', label: 'Početna' },
               { href: '/projekti', label: 'Projekti' },
               { href: '/usluge', label: 'Usluge' },
               { href: '/blog', label: 'Blog' },
@@ -45,7 +45,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="py-2 md:py-0 font-outfit text-[13px] text-white transition-opacity duration-300 hover:opacity-50"
+                className="py-2 md:py-0 font-outfit text-[16px] text-white transition-opacity duration-300 hover:opacity-50"
                 style={{ fontWeight: 300 }}
               >
                 {link.label}
@@ -57,15 +57,15 @@ export default function Footer() {
         {/* Right: Contact */}
         <div>
           <p
-            className="font-outfit text-[12px] uppercase tracking-[0.12em] mb-5"
+            className="font-outfit text-[12px] uppercase tracking-[0.12em] mb-4 md:mb-6"
             style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
           >
-            Kontakt
+            Javi se
           </p>
-          <div className="flex flex-col gap-1 md:gap-3">
+          <div className="flex flex-col gap-1 md:gap-4">
             <a
               href="mailto:hello@samasvojmajstor.rs"
-              className="py-2 md:py-0 font-outfit text-[13px] text-white transition-opacity duration-300 hover:opacity-50"
+              className="py-2 md:py-0 font-outfit text-[16px] text-white transition-opacity duration-300 hover:opacity-50"
               style={{ fontWeight: 300 }}
             >
               hello@samasvojmajstor.rs
@@ -74,7 +74,7 @@ export default function Footer() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="py-2 md:py-0 font-outfit text-[13px] text-white transition-opacity duration-300 hover:opacity-50"
+              className="py-2 md:py-0 font-outfit text-[16px] text-white transition-opacity duration-300 hover:opacity-50"
               style={{ fontWeight: 300 }}
             >
               Instagram →
@@ -105,13 +105,13 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="max-w-[1440px] mx-auto px-5 md:px-16 pb-8 flex justify-between items-center">
         <p
-          className="font-outfit text-[12px]"
+          className="font-outfit text-[13px]"
           style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
         >
           © {new Date().getFullYear()} Sama Svoj Majstor
         </p>
         <p
-          className="font-outfit text-[12px]"
+          className="font-outfit text-[13px]"
           style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
         >
           Sva prava zadržana

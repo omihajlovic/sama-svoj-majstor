@@ -5,7 +5,7 @@ const services = [
     name: 'Brzi Saveti',
     tagline: 'Za konkretne odgovore bez dugog procesa',
     description:
-      'Idealno za one koji imaju jasno definisan prostor i trebaju nekoga da im potvrdi pravac — ili da ih zaustavi pre skupih grešaka. Jedna prostorija, jasne preporuke, brz odgovor.',
+      'Idealno za one koji imaju jasno definisan prostor i trebaju nekoga da im potvrdi pravac ili ih zaustavi pre skupih grešaka. Jedna prostorija, jasne preporuke, brz odgovor.',
     includes: [
       'Analiza fotografija i dimenzija prostora',
       'Preporuke za boje i materijale',
@@ -22,7 +22,7 @@ const services = [
     name: 'Kompletan Dizajn Enterijera',
     tagline: 'Od ideje do potpuno uređenog prostora',
     description:
-      'Za one koji žele da ne misle ni o čemu — da ceo proces od prvog razgovora do finalne realizacije bude vođen. Idealno za rekonstrukcije, nove stanove i poslovne prostore.',
+      'Za one koji žele da ne misle ni o čemu, već da ceo proces od prvog razgovora do finalne realizacije bude vođen. Idealno za rekonstrukcije, nove stanove i poslovne prostore.',
     includes: [
       'Detaljna analiza prostora (foto + video + teren)',
       'Idejno rešenje i moodboard',
@@ -109,7 +109,7 @@ export default function UslugePage() {
                           className="flex items-start gap-3 font-outfit text-[15px] text-[#444444]"
                           style={{ fontWeight: 300 }}
                         >
-                          <span className="text-[#6e6e6e] mt-0.5">—</span>
+                          <span className="inline-block w-3 h-px bg-[#6e6e6e] mt-[0.7em] flex-shrink-0" aria-hidden />
                           {item}
                         </li>
                       ))}

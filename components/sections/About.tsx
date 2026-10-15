@@ -28,13 +28,13 @@ export default function About() {
             className="font-outfit text-[#666666]"
             style={{ fontWeight: 300, fontSize: '16px', lineHeight: 1.8 }}
           >
-            Verujem da svaki prostor nosi priču svog stanara. Moj posao nije da ti nametnemo trend, već da te pitam kako živiš, šta te raduje, šta ti smeta — i da iz toga izvučem rešenje koje je samo tvoje. Dizajn enterijera nije luksuz. To je odluka da počneš da živiš bolje, odmah, u prostoru koji već imaš.
+            Verujem da svaki prostor nosi priču svog stanara. Moj posao nije da ti nametnemo trend, već da te pitam kako živiš, šta te raduje, šta ti smeta, i da iz toga izvučem rešenje koje je samo tvoje. Dizajn enterijera nije luksuz. To je odluka da počneš da živiš bolje, odmah, u prostoru koji već imaš.
           </p>
           <p
             className="font-outfit text-[#666666]"
             style={{ fontWeight: 300, fontSize: '16px', lineHeight: 1.8 }}
           >
-            Posle godina pisanja o arhitekturi i dizajnu, počela sam sama da uređujem prostore. Svaki projekat je za mene istraživanje — kombinujem znanje o materijalima, svetlosti i ergonomiji sa pažljivim slušanjem klijenta. Rezultat su prostori koji izgledaju lepo, ali se pre svega dobro osećaju.
+            Posle godina pisanja o arhitekturi i dizajnu, počela sam sama da uređujem prostore. Svaki projekat je za mene istraživanje u kom kombinujem znanje o materijalima, svetlosti i ergonomiji sa pažljivim slušanjem klijenta. Rezultat su prostori koji izgledaju lepo, ali se pre svega dobro osećaju.
           </p>
         </div>
 

@@ -163,7 +163,7 @@ export default function KontaktPage() {
                   >
                     <option value="">Izaberi...</option>
                     <option value="do1000">do 1.000€</option>
-                    <option value="1000-3000">1.000€ – 3.000€</option>
+                    <option value="1000-3000">1.000€ do 3.000€</option>
                     <option value="3000+">3.000€+</option>
                   </select>
                 </div>

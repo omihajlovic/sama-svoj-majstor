@@ -28,7 +28,7 @@ export default function WhoIsBehind() {
               className="font-outfit text-[#666666] mb-4"
               style={{ fontWeight: 300, fontSize: '16px', lineHeight: 1.8 }}
             >
-              Počela sam karijeru kao novinarka koja je pisala o arhitekturi i dizajnu. Godinama sam intervjuisala arhitekte, pratila izložbe, pisala o najlepšim prostorima sveta — i sve vreme sam znala da to što opisujem hoću da radim, ne samo da opisujem.
+              Počela sam karijeru kao novinarka koja je pisala o arhitekturi i dizajnu. Godinama sam intervjuisala arhitekte, pratila izložbe, pisala o najlepšim prostorima sveta. Sve vreme sam znala da to što opisujem hoću da radim, ne samo da opisujem.
             </p>
             <p
               className="font-outfit text-[#666666]"
@@ -57,7 +57,7 @@ export default function WhoIsBehind() {
         <div className="relative min-h-[400px]">
           <Image
             src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=900&q=80"
-            alt="Sanja Mihajlovic — dizajner enterijera"
+            alt="Sanja Mihajlovic, dizajner enterijera"
             fill
             className="object-cover object-center"
             sizes="50vw"

@@ -20,7 +20,7 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: 'Sama Svoj Majstor — Dizajn Enterijera',
+  title: 'Sama Svoj Majstor | Dizajn Enterijera',
   description: 'Premium usluge dizajna enterijera u Srbiji. Od brzih saveta do kompletnog uređenja prostora.',
 }
 

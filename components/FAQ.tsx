@@ -10,23 +10,23 @@ interface FAQItem {
 const faqItems: FAQItem[] = [
   {
     question: 'Kako funkcioniše plaćanje?',
-    answer: 'Plaćanje se dogovara individualno za svaki projekat. Za brze savete plaćanje je fiksno po prostoriji (45€), dok se za kompletan dizajn enterijera cena dogovara na osnovu kvadrature i obima posla. Uplate se vrše u dogovorenim fazama — nikad sve odjednom.',
+    answer: 'Plaćanje se dogovara individualno za svaki projekat. Za brze savete plaćanje je fiksno po prostoriji (45€), dok se za kompletan dizajn enterijera cena dogovara na osnovu kvadrature i obima posla. Uplate se vrše u dogovorenim fazama, nikad sve odjednom.',
   },
   {
     question: 'Da li radite online?',
-    answer: 'Da, radim i online i uživo. Velika većina projekata se može uspešno realizovati online — putem video poziva, detaljnih upitnika i digitalne razmene materijala. Za klijente u Beogradu i okolini, rado dolazim i na teren za inicijalnu procenu prostora.',
+    answer: 'Da, radim i online i uživo. Velika većina projekata se može uspešno realizovati online, putem video poziva, detaljnih upitnika i digitalne razmene materijala. Za klijente u Beogradu i okolini, rado dolazim i na teren za inicijalnu procenu prostora.',
   },
   {
     question: 'Koliko traje projekat?',
-    answer: 'Zavisi od obima saradnje. Brzi savet za jednu prostoriju — 5-7 radnih dana. Kompletan dizajn enterijera jednosobnog stana — 4-8 nedelja. Veći prostori i rekonstrukcije traju proporcionalno duže. Sve rokove dogovaramo pre početka rada.',
+    answer: 'Zavisi od obima saradnje. Brzi savet za jednu prostoriju traje 5 do 7 radnih dana. Kompletan dizajn enterijera jednosobnog stana traje 4 do 8 nedelja. Veći prostori i rekonstrukcije traju proporcionalno duže. Sve rokove dogovaramo pre početka rada.',
   },
   {
     question: 'Koja usluga je za mene?',
-    answer: 'Ako imaš jasan prostor koji znaš šta hoćeš, ali trebaš nekoga da ti potvrdi pravac i da ti da konkretne preporuke za nameštaj, materijale i boje — brzi saveti su za tebe. Ako ti treba neko ko će od nule osmisliti prostor, napraviti plan nameštaja, odabrati sve materijale i voditi te kroz ceo proces — to je kompletan dizajn.',
+    answer: 'Ako imaš jasan prostor koji znaš šta hoćeš, ali trebaš nekoga da ti potvrdi pravac i da ti da konkretne preporuke za nameštaj, materijale i boje, brzi saveti su za tebe. Ako ti treba neko ko će od nule osmisliti prostor, napraviti plan nameštaja, odabrati sve materijale i voditi te kroz ceo proces, to je kompletan dizajn.',
   },
   {
     question: 'Da li radite male stanove?',
-    answer: 'Apsolutno. Mali stanovi su zapravo moja specijalnost. Dizajnirati mali prostor dobro je zapravo teže od dizajniranja velikog — zahteva kreativnost, poznavanje ergonomije i iskustvo sa pametnim rešenjima za odlaganje. Rado radim stanove od 20m² naviše.',
+    answer: 'Apsolutno. Mali stanovi su zapravo moja specijalnost. Dizajnirati mali prostor dobro je zapravo teže od dizajniranja velikog. Zahteva kreativnost, poznavanje ergonomije i iskustvo sa pametnim rešenjima za odlaganje. Rado radim stanove od 20m² naviše.',
   },
 ]
 

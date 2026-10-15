@@ -12,22 +12,22 @@ const steps = [
   {
     number: '02',
     title: 'Sagledavam problem',
-    description: 'Analiziram tvoj prostor — fotografije, skice, dimenzije. Slušam šta kažeš, ali i ono što ne kažeš. Svaki prostor ima specifičan izazov.',
+    description: 'Analiziram tvoj prostor kroz fotografije, skice i dimenzije. Slušam šta kažeš, ali i ono što ne kažeš. Svaki prostor ima specifičan izazov.',
   },
   {
     number: '03',
     title: 'Dogovaramo saradnju',
-    description: 'Predlažem pristup koji odgovara tebi — brzisavet ili kompletna saradnja. Definišemo obim posla, rokove i cenu. Sve jasno, bez iznenađenja.',
+    description: 'Predlažem pristup koji odgovara tebi: brzi savet ili kompletna saradnja. Definišemo obim posla, rokove i cenu. Sve jasno, bez iznenađenja.',
   },
   {
     number: '04',
     title: 'Dobijaš rešenje',
-    description: 'Prezentacija idejnog rešenja — moodboard, plan nameštaja, preporuke za materijale i boje. Razgovaramo, doterujem prema tvom feedbacku.',
+    description: 'Predstavljam idejno rešenje: moodboard, plan nameštaja, preporuke za materijale i boje. Razgovaramo, doterujem prema tvom feedbacku.',
   },
   {
     number: '05',
     title: 'Razrađujem detalje',
-    description: 'Detaljna specifikacija svakog elementa — koji nameštaj, koji materijal, koji dobavljač, koja cena. Imаš kompletnu listu za nabavku i izvođenje.',
+    description: 'Detaljna specifikacija svakog elementa: koji nameštaj, koji materijal, koji dobavljač, koja cena. Imaš kompletnu listu za nabavku i izvođenje.',
   },
   {
     number: '06',

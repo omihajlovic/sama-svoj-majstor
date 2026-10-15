@@ -36,7 +36,7 @@ export default function BlogCard({ post }: BlogCardProps) {
         className="font-outfit text-[12px] text-[#6e6e6e] mb-2"
         style={{ fontWeight: 300 }}
       >
-        {post.date} — {post.author}
+        {post.date} · {post.author}
       </p>
 
       {/* Title */}
