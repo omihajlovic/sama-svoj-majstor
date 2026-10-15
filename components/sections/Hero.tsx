@@ -33,7 +33,7 @@ export default function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-8">
+        <div className="flex flex-col md:grid md:grid-cols-2 md:w-max gap-3 md:gap-8">
           <Link
             href="/projekti"
             className="text-center font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111]"
