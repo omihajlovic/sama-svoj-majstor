@@ -35,7 +35,7 @@ export default function Testimonials() {
           <div className="mb-8 md:mb-0">
             <div className="md:sticky md:top-24">
               <p
-                className="font-outfit text-[14px] text-[#999999] mb-2"
+                className="font-outfit text-[14px] text-[#6e6e6e] mb-2"
                 style={{ fontWeight: 300 }}
               >
                 / Utisci
@@ -76,7 +76,7 @@ export default function Testimonials() {
                     {t.name}
                   </p>
                   <p
-                    className="font-outfit text-[13px] text-[#999999]"
+                    className="font-outfit text-[13px] text-[#6e6e6e]"
                     style={{ fontWeight: 300 }}
                   >
                     {t.info}

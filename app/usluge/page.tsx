@@ -45,7 +45,7 @@ export default function UslugePage() {
       <div className="pt-28 pb-16 md:pt-32 md:pb-32" style={{ backgroundColor: '#f5f4f1' }}>
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <p
-            className="font-outfit text-[14px] text-[#999999] mb-2"
+            className="font-outfit text-[14px] text-[#6e6e6e] mb-2"
             style={{ fontWeight: 300 }}
           >
             / Saradnja
@@ -97,7 +97,7 @@ export default function UslugePage() {
                   </p>
                   <div className="mb-8">
                     <p
-                      className="font-outfit text-[11px] uppercase tracking-[0.12em] text-[#999999] mb-4"
+                      className="font-outfit text-[12px] uppercase tracking-[0.12em] text-[#6e6e6e] mb-4"
                       style={{ fontWeight: 300 }}
                     >
                       {service.label}
@@ -109,7 +109,7 @@ export default function UslugePage() {
                           className="flex items-start gap-3 font-outfit text-[15px] text-[#444444]"
                           style={{ fontWeight: 300 }}
                         >
-                          <span className="text-[#999999] mt-0.5">—</span>
+                          <span className="text-[#6e6e6e] mt-0.5">—</span>
                           {item}
                         </li>
                       ))}
@@ -121,7 +121,7 @@ export default function UslugePage() {
                 <div className="flex flex-col justify-between">
                   <div>
                     <p
-                      className="font-outfit text-[11px] uppercase tracking-[0.12em] text-[#999999] mb-3"
+                      className="font-outfit text-[12px] uppercase tracking-[0.12em] text-[#6e6e6e] mb-3"
                       style={{ fontWeight: 300 }}
                     >
                       Cena

@@ -96,7 +96,7 @@ export default function ProjectsPreview() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
             <div className="absolute bottom-5 left-5 right-5 md:bottom-8 md:left-8 md:right-auto pointer-events-none">
               <p
-                className="font-outfit text-[11px] uppercase tracking-[0.12em] text-white/70 mb-2"
+                className="font-outfit text-[12px] uppercase tracking-[0.12em] text-white/85 mb-2"
                 style={{ fontWeight: 300 }}
               >
                 {project.category}
@@ -108,7 +108,7 @@ export default function ProjectsPreview() {
                 {project.title}
               </h3>
               <p
-                className="font-outfit text-[13px] text-white/70 mt-1"
+                className="font-outfit text-[13px] text-white/85 mt-1"
                 style={{ fontWeight: 300 }}
               >
                 {project.description.slice(0, 60)}...
@@ -182,7 +182,7 @@ export default function ProjectsPreview() {
         <div className="flex items-end justify-between gap-8 flex-wrap">
           <div className="flex-1 min-w-0">
             <p
-              className="font-outfit text-[14px] text-[#999999] mb-2"
+              className="font-outfit text-[14px] text-[#6e6e6e] mb-2"
               style={{ fontWeight: 300 }}
             >
               / Neki od mojih projekata

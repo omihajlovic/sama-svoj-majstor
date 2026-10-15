@@ -45,7 +45,7 @@ export default function PainPointsServices() {
                   className="flex items-start gap-4 py-5"
                   style={{ borderBottom: '0.5px solid rgba(0,0,0,0.1)' }}
                 >
-                  <span className="font-outfit text-[15px] text-[#999999] mt-0.5" style={{ fontWeight: 300 }}>—</span>
+                  <span className="font-outfit text-[15px] text-[#6e6e6e] mt-0.5" style={{ fontWeight: 300 }}>—</span>
                   <p className="font-outfit text-[15px] text-[#444444]" style={{ fontWeight: 300 }}>
                     {point}
                   </p>
@@ -82,7 +82,7 @@ export default function PainPointsServices() {
                       {service.name}
                     </h3>
                     <p
-                      className="font-outfit text-[#888888]"
+                      className="font-outfit text-[#666666]"
                       style={{ fontWeight: 300, fontSize: '15px', lineHeight: 1.7 }}
                     >
                       {service.description}

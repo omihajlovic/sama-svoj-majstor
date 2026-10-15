@@ -29,8 +29,8 @@ export default function Footer() {
         {/* Middle: Navigation */}
         <div>
           <p
-            className="font-outfit text-[11px] uppercase tracking-[0.12em] mb-5"
-            style={{ fontWeight: 300, color: 'rgba(255,255,255,0.4)' }}
+            className="font-outfit text-[12px] uppercase tracking-[0.12em] mb-5"
+            style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
           >
             Navigacija
           </p>
@@ -57,8 +57,8 @@ export default function Footer() {
         {/* Right: Contact */}
         <div>
           <p
-            className="font-outfit text-[11px] uppercase tracking-[0.12em] mb-5"
-            style={{ fontWeight: 300, color: 'rgba(255,255,255,0.4)' }}
+            className="font-outfit text-[12px] uppercase tracking-[0.12em] mb-5"
+            style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
           >
             Kontakt
           </p>
@@ -106,13 +106,13 @@ export default function Footer() {
       <div className="max-w-[1440px] mx-auto px-5 md:px-16 pb-8 flex justify-between items-center">
         <p
           className="font-outfit text-[12px]"
-          style={{ fontWeight: 300, color: 'rgba(255,255,255,0.4)' }}
+          style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
         >
           © {new Date().getFullYear()} Sama Svoj Majstor
         </p>
         <p
           className="font-outfit text-[12px]"
-          style={{ fontWeight: 300, color: 'rgba(255,255,255,0.4)' }}
+          style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
         >
           Sva prava zadržana
         </p>

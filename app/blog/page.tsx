@@ -8,7 +8,7 @@ export default function BlogPage() {
       <div className="pt-28 pb-16 md:pt-32 md:pb-32" style={{ backgroundColor: '#f5f4f1' }}>
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <p
-            className="font-outfit text-[14px] text-[#999999] mb-2"
+            className="font-outfit text-[14px] text-[#6e6e6e] mb-2"
             style={{ fontWeight: 300 }}
           >
             / Tekstovi i saveti

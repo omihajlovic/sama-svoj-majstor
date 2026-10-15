@@ -18,7 +18,7 @@ export default function BeforeAfterSection() {
           {/* Left column — pr gives breathing room without affecting grid split */}
           <div className="flex flex-col justify-center py-4 mb-6 md:mb-0 md:pr-16">
             <p
-              className="font-outfit text-[14px] text-[#999999] mb-2"
+              className="font-outfit text-[14px] text-[#6e6e6e] mb-2"
               style={{ fontWeight: 300 }}
             >
               / Transformacije
@@ -38,11 +38,11 @@ export default function BeforeAfterSection() {
 
             <div className="mb-8">
               <div className="mb-3" style={{ borderBottom: '0.5px solid rgba(0,0,0,0.1)', paddingBottom: '12px' }}>
-                <p className="font-outfit text-[11px] uppercase tracking-[0.1em] text-[#999999] mb-1" style={{ fontWeight: 300 }}>Tip projekta</p>
+                <p className="font-outfit text-[12px] uppercase tracking-[0.1em] text-[#6e6e6e] mb-1" style={{ fontWeight: 300 }}>Tip projekta</p>
                 <p className="font-outfit text-[13px] text-[#444444]" style={{ fontWeight: 300 }}>{featured.category}</p>
               </div>
               <div className="pt-2">
-                <p className="font-outfit text-[11px] uppercase tracking-[0.1em] text-[#999999] mb-1" style={{ fontWeight: 300 }}>Trajanje</p>
+                <p className="font-outfit text-[12px] uppercase tracking-[0.1em] text-[#6e6e6e] mb-1" style={{ fontWeight: 300 }}>Trajanje</p>
                 <p className="font-outfit text-[13px] text-[#444444]" style={{ fontWeight: 300 }}>{featured.duration}</p>
               </div>
             </div>
@@ -83,9 +83,9 @@ export default function BeforeAfterSection() {
 
               {/* Left: drag hint */}
               <div className="flex items-center gap-2">
-                <span className="text-[#999999]" style={{ fontSize: '13px' }}>⟷</span>
+                <span className="text-[#6e6e6e]" style={{ fontSize: '13px' }}>⟷</span>
                 <span
-                  className="font-outfit text-[13px] text-[#999999]"
+                  className="font-outfit text-[13px] text-[#6e6e6e]"
                   style={{ fontWeight: 300 }}
                 >
                   Prevuci da vidiš pre i posle
@@ -107,7 +107,7 @@ export default function BeforeAfterSection() {
                   </div>
 
                   <span
-                    className="font-outfit text-[12px] text-[#999999]"
+                    className="font-outfit text-[12px] text-[#6e6e6e]"
                     style={{ fontWeight: 300 }}
                   >
                     {activeIndex + 1} / {projekti.length}

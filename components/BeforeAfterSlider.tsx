@@ -170,13 +170,13 @@ export default function BeforeAfterSlider({
 
       {/* Labels */}
       <span
-        className="absolute bottom-4 left-4 font-outfit text-[11px] text-white uppercase tracking-[0.12em] z-10 pointer-events-none"
+        className="absolute bottom-4 left-4 font-outfit text-[12px] text-white uppercase tracking-[0.12em] z-10 pointer-events-none"
         style={{ fontWeight: 300 }}
       >
         {beforeLabel}
       </span>
       <span
-        className="absolute bottom-4 right-4 font-outfit text-[11px] text-white uppercase tracking-[0.12em] z-10 pointer-events-none"
+        className="absolute bottom-4 right-4 font-outfit text-[12px] text-white uppercase tracking-[0.12em] z-10 pointer-events-none"
         style={{ fontWeight: 300 }}
       >
         {afterLabel}

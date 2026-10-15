@@ -126,7 +126,7 @@ export default function ProcessSection() {
               <div>
                 <p
                   className="font-outfit text-[12px] uppercase tracking-[0.12em]"
-                  style={{ fontWeight: 300, color: 'rgba(255,255,255,0.4)', marginBottom: '0.5rem' }}
+                  style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)', marginBottom: '0.5rem' }}
                 >
                   KORAK {step.number}
                 </p>

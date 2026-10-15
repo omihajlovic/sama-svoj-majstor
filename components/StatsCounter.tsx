@@ -78,7 +78,7 @@ export default function StatsCounter() {
             </div>
 
             <div
-              className="font-outfit text-[#888888]"
+              className="font-outfit text-[#666666]"
               style={{ fontSize: '15px', fontWeight: 300, lineHeight: 1.7 }}
             >
               {stat.description}

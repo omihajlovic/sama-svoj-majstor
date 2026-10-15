@@ -40,10 +40,10 @@ export default function KontaktPage() {
   const labelStyle: React.CSSProperties = {
     fontFamily: 'var(--font-outfit)',
     fontWeight: 300,
-    fontSize: '11px',
+    fontSize: '12px',
     textTransform: 'uppercase' as const,
     letterSpacing: '0.1em',
-    color: '#999999',
+    color: '#6e6e6e',
     display: 'block',
     marginBottom: '4px',
   }
@@ -191,7 +191,7 @@ export default function KontaktPage() {
                 </button>
 
                 <p
-                  className="font-outfit text-[12px] text-[#999999] text-center"
+                  className="font-outfit text-[12px] text-[#6e6e6e] text-center"
                   style={{ fontWeight: 300 }}
                 >
                   Nakon prijave, javiću ti se sa sledećim koracima i detaljima o plaćanju
@@ -211,7 +211,7 @@ export default function KontaktPage() {
             ].map((item, i) => (
               <span
                 key={i}
-                className="font-outfit text-[13px] text-[#999999]"
+                className="font-outfit text-[13px] text-[#6e6e6e]"
                 style={{ fontWeight: 300 }}
               >
                 {item}

@@ -8,7 +8,7 @@ export default function WhoIsBehind() {
         {/* Left: content */}
         <div className="flex flex-col justify-center px-5 md:px-16 py-16 md:py-24">
           <p
-            className="font-outfit text-[14px] text-[#999999] mb-2"
+            className="font-outfit text-[14px] text-[#6e6e6e] mb-2"
             style={{ fontWeight: 300 }}
           >
             / Ko stoji iza ovih projekata
@@ -46,7 +46,7 @@ export default function WhoIsBehind() {
             Pošalji upit
           </Link>
           <p
-            className="font-outfit text-[#999999]"
+            className="font-outfit text-[#6e6e6e]"
             style={{ fontWeight: 300, fontSize: '14px' }}
           >
             Nakon prijave, javiću ti se sa sledećim koracima

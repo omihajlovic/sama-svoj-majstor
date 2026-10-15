@@ -129,7 +129,7 @@ export default function Navbar() {
             </Link>
             <a
               href="mailto:hello@samasvojmajstor.rs"
-              className="block text-center font-outfit text-[13px] text-[#999999] py-2"
+              className="block text-center font-outfit text-[13px] text-[#6e6e6e] py-2"
               style={{ fontWeight: 300 }}
             >
               hello@samasvojmajstor.rs

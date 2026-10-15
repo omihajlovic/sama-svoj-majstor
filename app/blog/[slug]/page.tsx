@@ -25,7 +25,7 @@ export default function SingleBlogPage({ params }: Props) {
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <Link
             href="/blog"
-            className="font-outfit text-[13px] text-[#999999] transition-opacity duration-300 hover:opacity-50"
+            className="font-outfit text-[13px] text-[#6e6e6e] transition-opacity duration-300 hover:opacity-50"
             style={{ fontWeight: 300 }}
           >
             ← Nazad na blog
@@ -37,7 +37,7 @@ export default function SingleBlogPage({ params }: Props) {
       <div className="pt-8 md:pt-10 pb-8 md:pb-16" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-[680px] mx-auto px-5 md:px-8">
           <p
-            className="font-outfit text-[12px] text-[#999999] mb-6"
+            className="font-outfit text-[12px] text-[#6e6e6e] mb-6"
             style={{ fontWeight: 300 }}
           >
             {post.date}
