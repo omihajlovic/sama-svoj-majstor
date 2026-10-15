@@ -43,7 +43,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.title}
         </h3>
         <p
-          className="font-outfit text-[13px] text-[#666666] leading-relaxed line-clamp-2"
+          className="font-outfit text-[15px] text-[#666666] leading-relaxed line-clamp-2"
           style={{ fontWeight: 300 }}
         >
           {project.description}

@@ -111,7 +111,7 @@ export default function SingleBlogPage({ params }: Props) {
             Imaš pitanja o uređenju svog prostora?
           </h3>
           <p
-            className="font-outfit text-[14px] text-[#666666] mb-8"
+            className="font-outfit text-[15px] text-[#666666] mb-8"
             style={{ fontWeight: 300, lineHeight: 1.7 }}
           >
             Javi mi se i rado ću ti pomoći da pronađeš pravo rešenje za tvoj prostor.

@@ -83,7 +83,7 @@ export default function KontaktPage() {
               </p>
               <p
                 className="font-outfit text-[#666666]"
-                style={{ fontWeight: 300, fontSize: '14px', lineHeight: 1.7 }}
+                style={{ fontWeight: 300, fontSize: '15px', lineHeight: 1.7 }}
               >
                 Javiću ti se u roku od 48 sati sa sledećim koracima.
               </p>

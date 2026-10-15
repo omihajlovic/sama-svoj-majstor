@@ -97,7 +97,7 @@ export default function SingleProjekatPage({ params }: Props) {
               Problem
             </h2>
             <p
-              className="font-outfit text-[15px] md:text-[14px] text-[#666666]"
+              className="font-outfit text-[15px] text-[#666666]"
               style={{ fontWeight: 300, lineHeight: 1.8 }}
             >
               {project.problem}
@@ -111,7 +111,7 @@ export default function SingleProjekatPage({ params }: Props) {
               Rešenje
             </h2>
             <p
-              className="font-outfit text-[15px] md:text-[14px] text-[#666666]"
+              className="font-outfit text-[15px] text-[#666666]"
               style={{ fontWeight: 300, lineHeight: 1.8 }}
             >
               {project.resenje}
@@ -125,7 +125,7 @@ export default function SingleProjekatPage({ params }: Props) {
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <h2
             className="font-cormorant text-[#111111] mb-10"
-            style={{ fontWeight: 300, fontSize: 'clamp(28px, 4.7vw, 36px)' }}
+            style={{ fontWeight: 300, fontSize: '28px' }}
           >
             Galerija
           </h2>
@@ -155,7 +155,7 @@ export default function SingleProjekatPage({ params }: Props) {
             Želiš ovako nešto?
           </h2>
           <p
-            className="font-outfit text-[15px] md:text-[14px] text-[#666666] mb-8"
+            className="font-outfit text-[15px] text-[#666666] mb-8"
             style={{ fontWeight: 300, maxWidth: '400px', margin: '0 auto 2rem' }}
           >
             Svaki prostor je drugačiji, ali svaki prostor ima potencijal. Javi mi se i razgovaramo.

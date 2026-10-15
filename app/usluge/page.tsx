@@ -84,13 +84,13 @@ export default function UslugePage() {
                     {service.name}
                   </h2>
                   <p
-                    className="font-outfit text-[15px] md:text-[14px] text-[#666666] mb-6"
+                    className="font-outfit text-[15px] text-[#666666] mb-6"
                     style={{ fontWeight: 300, fontStyle: 'italic' }}
                   >
                     {service.tagline}
                   </p>
                   <p
-                    className="font-outfit text-[15px] md:text-[14px] text-[#666666] mb-10"
+                    className="font-outfit text-[15px] text-[#666666] mb-10"
                     style={{ fontWeight: 300, lineHeight: 1.8 }}
                   >
                     {service.description}
@@ -106,7 +106,7 @@ export default function UslugePage() {
                       {service.includes.map((item, j) => (
                         <li
                           key={j}
-                          className="flex items-start gap-3 font-outfit text-[15px] md:text-[14px] text-[#444444]"
+                          className="flex items-start gap-3 font-outfit text-[15px] text-[#444444]"
                           style={{ fontWeight: 300 }}
                         >
                           <span className="text-[#999999] mt-0.5">—</span>
@@ -149,7 +149,7 @@ export default function UslugePage() {
         {/* Comparison note */}
         <div className="max-w-[1440px] mx-auto px-5 md:px-16 py-16">
           <p
-            className="font-outfit text-[15px] md:text-[14px] text-[#666666] text-center"
+            className="font-outfit text-[15px] text-[#666666] text-center"
             style={{ fontWeight: 300, maxWidth: '600px', margin: '0 auto', lineHeight: 1.8 }}
           >
             Brzi saveti su za smernice i ideju, dok je kompletan dizajn za potpunu realizaciju prostora. Nisam sigurna/an koja je za tebe?{' '}
