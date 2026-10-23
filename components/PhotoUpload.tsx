@@ -87,7 +87,7 @@ export default function PhotoUpload({ files, onChange }: Props) {
             <span className="hidden md:inline">Prevuci fotografije ovde ili klikni da ih izabereš</span>
             <span className="md:hidden">Dodaj fotografije iz galerije</span>
           </span>
-          <span className="font-outfit text-[13px] text-[#6e6e6e]" style={{ fontWeight: 300 }}>
+          <span className="font-outfit text-[14px] md:text-[13px] text-[#6e6e6e]" style={{ fontWeight: 300 }}>
             Do {MAX_FILES} fotografija, najviše {MAX_MB} MB po slici. Slike mi pomažu da ti dam konkretniji odgovor.
           </span>
         </label>
@@ -113,7 +113,7 @@ export default function PhotoUpload({ files, onChange }: Props) {
               </li>
             ))}
           </ul>
-          <p className="font-outfit text-[13px] text-[#6e6e6e] mt-3" style={{ fontWeight: 300 }}>
+          <p className="font-outfit text-[14px] md:text-[13px] text-[#6e6e6e] mt-3" style={{ fontWeight: 300 }}>
             {files.length} od {MAX_FILES} fotografija
           </p>
         </div>

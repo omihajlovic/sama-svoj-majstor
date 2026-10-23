@@ -69,7 +69,7 @@ export default function PainPointsServices() {
                 className="flex items-baseline gap-5 md:gap-8 py-5 md:py-6"
                 style={{ borderBottom: '0.5px solid rgba(0,0,0,0.1)' }}
               >
-                <span className="font-outfit text-[12px] tracking-[0.1em] text-[#6e6e6e] flex-shrink-0" style={{ fontWeight: 300 }}>
+                <span className="font-outfit text-[13px] md:text-[12px] tracking-[0.1em] text-[#6e6e6e] flex-shrink-0" style={{ fontWeight: 300 }}>
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <p
@@ -112,7 +112,7 @@ export default function PainPointsServices() {
                 className="flex flex-col p-7 md:p-12"
                 style={{ backgroundColor: s.dark ? '#111111' : '#f5f4f1', color: text }}
               >
-                <p className="font-outfit text-[12px] uppercase tracking-[0.12em] mb-4" style={{ fontWeight: 300, color: label }}>
+                <p className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.12em] mb-4" style={{ fontWeight: 300, color: label }}>
                   {s.tagline}
                 </p>
                 <h3
@@ -127,12 +127,12 @@ export default function PainPointsServices() {
 
                 <div className="grid grid-cols-2 py-5 mb-8" style={{ borderTop: `0.5px solid ${line}`, borderBottom: `0.5px solid ${line}` }}>
                   <div>
-                    <p className="font-outfit text-[12px] uppercase tracking-[0.12em] mb-1" style={{ fontWeight: 300, color: label }}>Cena</p>
+                    <p className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.12em] mb-1" style={{ fontWeight: 300, color: label }}>Cena</p>
                     <p className="font-cormorant whitespace-nowrap" style={{ fontWeight: 300, fontSize: 'clamp(21px, 3.1vw, 24px)', lineHeight: 1.2 }}>{s.price}</p>
-                    <p className="font-outfit text-[13px]" style={{ fontWeight: 300, color: muted }}>{s.priceNote}</p>
+                    <p className="font-outfit text-[14px] md:text-[13px]" style={{ fontWeight: 300, color: muted }}>{s.priceNote}</p>
                   </div>
                   <div className="pl-4 md:pl-5" style={{ borderLeft: `0.5px solid ${line}` }}>
-                    <p className="font-outfit text-[12px] uppercase tracking-[0.12em] mb-1" style={{ fontWeight: 300, color: label }}>Trajanje</p>
+                    <p className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.12em] mb-1" style={{ fontWeight: 300, color: label }}>Trajanje</p>
                     <p className="font-cormorant whitespace-nowrap" style={{ fontWeight: 300, fontSize: 'clamp(21px, 3.1vw, 24px)', lineHeight: 1.2 }}>{s.duration}</p>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ export default function PainPointsServices() {
                 <div className="mt-auto flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
                   <Link
                     href="/kontakt"
-                    className={`text-center font-outfit text-[13px] tracking-[0.08em] px-8 py-4 transition-all duration-300 ${
+                    className={`text-center font-outfit text-[14px] md:text-[13px] tracking-[0.08em] px-8 py-4 transition-all duration-300 ${
                       s.dark
                         ? 'bg-white text-[#111111] hover:bg-transparent hover:text-white'
                         : 'bg-[#111111] text-white hover:bg-transparent hover:text-[#111111]'
@@ -160,7 +160,7 @@ export default function PainPointsServices() {
                   </Link>
                   <Link
                     href="/usluge"
-                    className="group text-center sm:text-left font-outfit text-[13px] tracking-[0.04em] py-2 transition-opacity duration-300 hover:opacity-60"
+                    className="group text-center sm:text-left font-outfit text-[14px] md:text-[13px] tracking-[0.04em] py-2 transition-opacity duration-300 hover:opacity-60"
                     style={{ fontWeight: 300, color: text }}
                   >
                     Detalji usluge{' '}

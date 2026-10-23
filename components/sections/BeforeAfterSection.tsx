@@ -38,12 +38,12 @@ export default function BeforeAfterSection() {
 
             <div className="mb-8">
               <div className="mb-3" style={{ borderBottom: '0.5px solid rgba(0,0,0,0.1)', paddingBottom: '12px' }}>
-                <p className="font-outfit text-[12px] uppercase tracking-[0.1em] text-[#6e6e6e] mb-1" style={{ fontWeight: 300 }}>Tip projekta</p>
-                <p className="font-outfit text-[13px] text-[#444444]" style={{ fontWeight: 300 }}>{featured.category}</p>
+                <p className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.1em] text-[#6e6e6e] mb-1" style={{ fontWeight: 300 }}>Tip projekta</p>
+                <p className="font-outfit text-[14px] md:text-[13px] text-[#444444]" style={{ fontWeight: 300 }}>{featured.category}</p>
               </div>
               <div className="pt-2">
-                <p className="font-outfit text-[12px] uppercase tracking-[0.1em] text-[#6e6e6e] mb-1" style={{ fontWeight: 300 }}>Trajanje</p>
-                <p className="font-outfit text-[13px] text-[#444444]" style={{ fontWeight: 300 }}>{featured.duration}</p>
+                <p className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.1em] text-[#6e6e6e] mb-1" style={{ fontWeight: 300 }}>Trajanje</p>
+                <p className="font-outfit text-[14px] md:text-[13px] text-[#444444]" style={{ fontWeight: 300 }}>{featured.duration}</p>
               </div>
             </div>
 
@@ -56,7 +56,7 @@ export default function BeforeAfterSection() {
 
             <Link
               href="/projekti"
-              className="font-outfit text-[13px] text-[#111111] transition-opacity duration-300 hover:opacity-50"
+              className="font-outfit text-[14px] md:text-[13px] text-[#111111] transition-opacity duration-300 hover:opacity-50"
               style={{
                 fontWeight: 300,
                 textDecoration: 'underline',
@@ -83,9 +83,9 @@ export default function BeforeAfterSection() {
 
               {/* Left: drag hint */}
               <div className="flex items-center gap-2">
-                <span className="text-[#6e6e6e]" style={{ fontSize: '13px' }}>⟷</span>
+                <span className="text-[#6e6e6e] text-[14px] md:text-[13px]" aria-hidden>⟷</span>
                 <span
-                  className="font-outfit text-[13px] text-[#6e6e6e]"
+                  className="font-outfit text-[14px] md:text-[13px] text-[#6e6e6e]"
                   style={{ fontWeight: 300 }}
                 >
                   Prevuci da vidiš pre i posle
@@ -107,7 +107,7 @@ export default function BeforeAfterSection() {
                   </div>
 
                   <span
-                    className="font-outfit text-[12px] text-[#6e6e6e]"
+                    className="font-outfit text-[13px] md:text-[12px] text-[#6e6e6e]"
                     style={{ fontWeight: 300 }}
                   >
                     {activeIndex + 1} / {projekti.length}
@@ -117,14 +117,14 @@ export default function BeforeAfterSection() {
                 <div className="flex items-center gap-1 md:gap-3">
                   <button
                     onClick={() => setActiveIndex(prevIndex)}
-                    className="font-outfit text-[12px] text-[#111111] px-2 py-3 md:p-0 transition-opacity duration-300 hover:opacity-50"
+                    className="font-outfit text-[14px] md:text-[12px] text-[#111111] px-2 py-3 md:p-0 transition-opacity duration-300 hover:opacity-50"
                     style={{ fontWeight: 300 }}
                   >
                     ← Prev
                   </button>
                   <button
                     onClick={() => setActiveIndex(nextIndex)}
-                    className="font-outfit text-[12px] text-[#111111] px-2 py-3 md:p-0 transition-opacity duration-300 hover:opacity-50"
+                    className="font-outfit text-[14px] md:text-[12px] text-[#111111] px-2 py-3 md:p-0 transition-opacity duration-300 hover:opacity-50"
                     style={{ fontWeight: 300 }}
                   >
                     Next →

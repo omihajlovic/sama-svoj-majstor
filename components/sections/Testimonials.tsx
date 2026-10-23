@@ -70,13 +70,13 @@ export default function Testimonials() {
                 </p>
                 <div>
                   <p
-                    className="font-outfit text-[13px] text-[#111111] tracking-[0.08em]"
+                    className="font-outfit text-[14px] md:text-[13px] text-[#111111] tracking-[0.08em]"
                     style={{ fontWeight: 300 }}
                   >
                     {t.name}
                   </p>
                   <p
-                    className="font-outfit text-[13px] text-[#6e6e6e]"
+                    className="font-outfit text-[14px] md:text-[13px] text-[#6e6e6e]"
                     style={{ fontWeight: 300 }}
                   >
                     {t.info}

@@ -67,7 +67,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-outfit text-[13px] tracking-[0.04em] text-[#111111] transition-opacity duration-300 hover:opacity-50"
+                className="font-outfit text-[14px] md:text-[13px] tracking-[0.04em] text-[#111111] transition-opacity duration-300 hover:opacity-50"
                 style={{ fontWeight: 300 }}
               >
                 {link.label}
@@ -75,7 +75,7 @@ export default function Navbar() {
             ))}
             <Link
               href="/kontakt"
-              className="font-outfit text-[13px] tracking-[0.04em] text-[#111111] px-5 py-2.5 transition-all duration-300 hover:bg-[#111111] hover:text-white"
+              className="font-outfit text-[14px] md:text-[13px] tracking-[0.04em] text-[#111111] px-5 py-2.5 transition-all duration-300 hover:bg-[#111111] hover:text-white"
               style={{
                 fontWeight: 300,
                 border: '0.5px solid #111111',
@@ -87,7 +87,7 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden h-11 -mr-3 px-3 font-outfit text-[13px] tracking-[0.08em] text-[#111111] transition-opacity duration-300 hover:opacity-50"
+            className="md:hidden h-11 -mr-3 px-3 font-outfit text-[14px] md:text-[13px] tracking-[0.08em] text-[#111111] transition-opacity duration-300 hover:opacity-50"
             style={{ fontWeight: 300 }}
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? 'Zatvori meni' : 'Otvori meni'}
@@ -122,14 +122,14 @@ export default function Navbar() {
             <Link
               href="/kontakt"
               onClick={() => setMenuOpen(false)}
-              className="block text-center font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 mb-4"
+              className="block text-center font-outfit text-[14px] md:text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 mb-4"
               style={{ fontWeight: 300, border: '0.5px solid #111111' }}
             >
               Pošalji upit
             </Link>
             <a
               href="mailto:hello@samasvojmajstor.rs"
-              className="block text-center font-outfit text-[13px] text-[#6e6e6e] py-2"
+              className="block text-center font-outfit text-[14px] md:text-[13px] text-[#6e6e6e] py-2"
               style={{ fontWeight: 300 }}
             >
               hello@samasvojmajstor.rs

@@ -43,7 +43,7 @@ export default function FinalCTA() {
           display: inline-block;
           font-family: var(--font-outfit);
           font-weight: 300;
-          font-size: 13px;
+          font-size: 14px;
           letter-spacing: 0.08em;
           color: white;
           padding: 1rem 2rem;
@@ -51,6 +51,9 @@ export default function FinalCTA() {
           transition: all 0.3s ease;
           background: transparent;
           margin-bottom: 1.5rem;
+        }
+        @media (min-width: 768px) {
+          .final-cta-btn { font-size: 13px; }
         }
         .final-cta-btn:hover {
           background: white;

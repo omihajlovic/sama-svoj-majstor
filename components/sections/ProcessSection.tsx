@@ -36,6 +36,34 @@ const steps = [
   },
 ]
 
+const circle = (cx: number, cy: number, r: number) =>
+  `M${cx - r} ${cy}a${r} ${r} 0 1 0 ${2 * r} 0a${r} ${r} 0 1 0 ${-2 * r} 0`
+
+// Architectural line pictograms, drawn as paths only so pathLength-based stroke animation works everywhere
+const icons: string[][] = [
+  ['M4 8h24v16H4z', 'M4 8l12 10 12-10'],
+  ['M3 3h16v16H3z', 'M3 11h7', 'M10 19a5 5 0 0 1 5-5', circle(22, 22, 5), 'M25.5 25.5L29 29'],
+  [circle(12, 16, 7), circle(20, 16, 7)],
+  ['M4 4h11v11H4z', 'M17 4h11v11H17z', 'M4 17h11v11H4z', circle(22.5, 22.5, 5.5)],
+  ['M4 28V4l24 24z', 'M9 23v-7l7 7z', 'M8 28v-3', 'M12 28v-3', 'M16 28v-3', 'M20 28v-3', 'M24 28v-3'],
+  [circle(10, 16, 6), circle(10, 16, 2), 'M16 16h13', 'M24 16v4', 'M28 16v5'],
+]
+
+function StepIcon({ index }: { index: number }) {
+  return (
+    <span
+      className="step-icon-box w-14 h-14 md:w-16 md:h-16 flex-shrink-0 flex items-center justify-center"
+      aria-hidden
+    >
+      <svg viewBox="0 0 32 32" className="step-icon w-7 h-7 md:w-8 md:h-8" fill="none" stroke="#ffffff" strokeWidth="1">
+        {icons[index].map((d, j) => (
+          <path key={j} d={d} pathLength={1} style={{ transitionDelay: `${250 + j * 120}ms` }} />
+        ))}
+      </svg>
+    </span>
+  )
+}
+
 export default function ProcessSection() {
   const stepsRef = useRef<(HTMLDivElement | null)[]>([])
 
@@ -70,6 +98,26 @@ export default function ProcessSection() {
           opacity: 1;
           transform: translateY(0);
         }
+        .step-icon-box {
+          border: 0.5px solid rgba(255,255,255,0.2);
+          transition: border-color 0.4s ease, background-color 0.4s ease;
+        }
+        .step-item:hover .step-icon-box {
+          border-color: rgba(255,255,255,0.6);
+          background-color: rgba(255,255,255,0.04);
+        }
+        .step-icon path {
+          stroke-dasharray: 1;
+          stroke-dashoffset: 1;
+          transition: stroke-dashoffset 1.4s cubic-bezier(0.65, 0, 0.35, 1);
+        }
+        .step-item.step-visible .step-icon path {
+          stroke-dashoffset: 0;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .step-item { opacity: 1; transform: none; transition: none; }
+          .step-icon path { stroke-dasharray: none; transition: none; }
+        }
         .process-cta {
           display: inline-block;
           font-family: var(--font-outfit);
@@ -102,7 +150,7 @@ export default function ProcessSection() {
           <div className="flex items-end">
             <p
               className="font-outfit text-[15px]"
-              style={{ fontWeight: 300, color: 'rgba(255,255,255,0.5)', lineHeight: 1.8 }}
+              style={{ fontWeight: 300, color: 'rgba(255,255,255,0.7)', lineHeight: 1.8 }}
             >
               Svaki korak je osmišljen da ti bude jasan i bez stresa. Znaš uvek šta sledeće sledi i šta se od tebe očekuje.
             </p>
@@ -122,10 +170,12 @@ export default function ProcessSection() {
                 transitionDelay: `${i * 80}ms`,
               }}
             >
-              {/* Left: KORAK label above title, both left-aligned */}
-              <div>
+              {/* Left: icon + KORAK label and title */}
+              <div className="flex items-center gap-5 md:gap-8">
+                <StepIcon index={i} />
+                <div>
                 <p
-                  className="font-outfit text-[12px] uppercase tracking-[0.12em]"
+                  className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.12em]"
                   style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)', marginBottom: '0.5rem' }}
                 >
                   KORAK {step.number}
@@ -136,6 +186,7 @@ export default function ProcessSection() {
                 >
                   {step.title}
                 </h3>
+                </div>
               </div>
 
               {/* Right: description */}
@@ -149,7 +200,7 @@ export default function ProcessSection() {
           ))}
         </div>
 
-        {/* CTA — centered, 4rem gap above to breathe after last step border */}
+        {/* CTA */}
         <div className="text-center" style={{ marginTop: '4rem' }}>
           <Link href="/kontakt" className="process-cta">
             Započni svoju transformaciju

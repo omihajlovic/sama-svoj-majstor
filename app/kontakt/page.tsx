@@ -54,7 +54,7 @@ function StepHeader({ n, title, note, done }: { n: number; title: string; note?:
   return (
     <div className="flex items-center gap-4 mb-7">
       <span
-        className="w-9 h-9 flex-shrink-0 flex items-center justify-center font-outfit text-[12px] tracking-[0.06em] transition-colors duration-300"
+        className="w-9 h-9 flex-shrink-0 flex items-center justify-center font-outfit text-[13px] md:text-[12px] tracking-[0.06em] transition-colors duration-300"
         style={{
           fontWeight: 400,
           border: '1px solid #111111',
@@ -67,7 +67,7 @@ function StepHeader({ n, title, note, done }: { n: number; title: string; note?:
       </span>
       <h2 className="font-cormorant text-[#111111] text-[24px] md:text-[28px]" style={{ fontWeight: 300, lineHeight: 1.15 }}>
         {title}
-        {note && <span className="block md:inline font-outfit text-[13px] text-[#6e6e6e] mt-1 md:mt-0 md:ml-3 md:align-middle" style={{ fontWeight: 300 }}>{note}</span>}
+        {note && <span className="block md:inline font-outfit text-[14px] md:text-[13px] text-[#6e6e6e] mt-1 md:mt-0 md:ml-3 md:align-middle" style={{ fontWeight: 300 }}>{note}</span>}
       </h2>
     </div>
   )
@@ -80,7 +80,7 @@ function NextSteps() {
       <ol>
         {nextSteps.map((s, i) => (
           <li key={s.title} className="flex gap-5 py-5" style={{ borderTop: '0.5px solid rgba(0,0,0,0.12)' }}>
-            <span className="w-6 flex-shrink-0 font-outfit text-[12px] tracking-[0.1em] text-[#6e6e6e] pt-1.5" style={{ fontWeight: 300 }}>
+            <span className="w-6 flex-shrink-0 font-outfit text-[13px] md:text-[12px] tracking-[0.1em] text-[#6e6e6e] pt-1.5" style={{ fontWeight: 300 }}>
               {String(i + 1).padStart(2, '0')}
             </span>
             <div>
@@ -233,14 +233,14 @@ export default function KontaktPage() {
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
                 <Link
                   href="/projekti"
-                  className="text-center font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111]"
+                  className="text-center font-outfit text-[14px] md:text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111]"
                   style={{ fontWeight: 300, border: '0.5px solid #111111' }}
                 >
                   Pogledaj projekte
                 </Link>
                 <Link
                   href="/"
-                  className="text-center sm:text-left font-outfit text-[13px] tracking-[0.04em] text-[#111111] py-2 transition-opacity duration-300 hover:opacity-60"
+                  className="text-center sm:text-left font-outfit text-[14px] md:text-[13px] tracking-[0.04em] text-[#111111] py-2 transition-opacity duration-300 hover:opacity-60"
                   style={{ fontWeight: 300 }}
                 >
                   Nazad na početnu
@@ -291,7 +291,7 @@ export default function KontaktPage() {
                             {o.label}
                           </span>
                           <span
-                            className="block font-outfit text-[13px] mt-1 transition-colors duration-200"
+                            className="block font-outfit text-[14px] md:text-[13px] mt-1 transition-colors duration-200"
                             style={{ fontWeight: 300, color: checked ? 'rgba(255,255,255,0.75)' : '#6e6e6e' }}
                           >
                             {o.hint}
@@ -420,7 +420,7 @@ export default function KontaktPage() {
                 <span className="inline-block transition-transform duration-300 group-hover:translate-x-1.5">→</span>
               </button>
 
-              <p className="font-outfit text-[13px] text-[#6e6e6e] text-center mt-5 max-w-[460px] mx-auto" style={{ fontWeight: 300, lineHeight: 1.6 }}>
+              <p className="font-outfit text-[14px] md:text-[13px] text-[#6e6e6e] text-center mt-5 max-w-[460px] mx-auto" style={{ fontWeight: 300, lineHeight: 1.6 }}>
                 Odgovaram u roku od 48 sati. Slanje upita te ni na šta ne obavezuje, a podatke koristim samo da bih ti odgovorila.
               </p>
             </form>

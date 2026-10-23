@@ -33,7 +33,7 @@ export default function BlogCard({ post }: BlogCardProps) {
 
       {/* Meta */}
       <p
-        className="font-outfit text-[12px] text-[#6e6e6e] mb-2"
+        className="font-outfit text-[13px] md:text-[12px] text-[#6e6e6e] mb-2"
         style={{ fontWeight: 300 }}
       >
         {post.date} · {post.author}

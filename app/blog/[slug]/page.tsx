@@ -25,7 +25,7 @@ export default function SingleBlogPage({ params }: Props) {
         <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <Link
             href="/blog"
-            className="font-outfit text-[13px] text-[#6e6e6e] transition-opacity duration-300 hover:opacity-50"
+            className="font-outfit text-[14px] md:text-[13px] text-[#6e6e6e] transition-opacity duration-300 hover:opacity-50"
             style={{ fontWeight: 300 }}
           >
             ← Nazad na blog
@@ -37,7 +37,7 @@ export default function SingleBlogPage({ params }: Props) {
       <div className="pt-8 md:pt-10 pb-8 md:pb-16" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-[680px] mx-auto px-5 md:px-8">
           <p
-            className="font-outfit text-[12px] text-[#6e6e6e] mb-6"
+            className="font-outfit text-[13px] md:text-[12px] text-[#6e6e6e] mb-6"
             style={{ fontWeight: 300 }}
           >
             {post.date}
@@ -118,7 +118,7 @@ export default function SingleBlogPage({ params }: Props) {
           </p>
           <Link
             href="/kontakt"
-            className="inline-block font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111]"
+            className="inline-block font-outfit text-[14px] md:text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111]"
             style={{ fontWeight: 300, border: '0.5px solid #111111' }}
           >
             Pošalji upit

@@ -157,7 +157,7 @@ export default function Select({ name, label, options, value, onChange, placehol
                   {o.label}
                 </span>
                 {o.hint && (
-                  <span className="block font-outfit text-[13px] text-[#6e6e6e] mt-0.5" style={{ fontWeight: 300 }}>
+                  <span className="block font-outfit text-[14px] md:text-[13px] text-[#6e6e6e] mt-0.5" style={{ fontWeight: 300 }}>
                     {o.hint}
                   </span>
                 )}

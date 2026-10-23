@@ -96,7 +96,7 @@ export default function ProjectsPreview() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
             <div className="absolute bottom-5 left-5 right-5 md:bottom-8 md:left-8 md:right-auto pointer-events-none">
               <p
-                className="font-outfit text-[12px] uppercase tracking-[0.12em] text-white/85 mb-2"
+                className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.12em] text-white/85 mb-2"
                 style={{ fontWeight: 300 }}
               >
                 {project.category}
@@ -108,7 +108,7 @@ export default function ProjectsPreview() {
                 {project.title}
               </h3>
               <p
-                className="font-outfit text-[13px] text-white/85 mt-1"
+                className="font-outfit text-[14px] md:text-[13px] text-white/85 mt-1"
                 style={{ fontWeight: 300 }}
               >
                 {project.description.slice(0, 60)}...
@@ -123,7 +123,7 @@ export default function ProjectsPreview() {
               className="absolute bottom-8 right-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
               style={{ width: '32px', height: '32px', border: '1px solid white' }}
             >
-              <span className="text-white text-[13px] leading-none">↗</span>
+              <span className="text-white text-[14px] md:text-[13px] leading-none">↗</span>
             </div>
           </>
         )}
@@ -291,7 +291,7 @@ export default function ProjectsPreview() {
       <div className="text-center pt-10 md:pt-12 pb-16 md:pb-24">
         <Link
           href="/projekti"
-          className="font-outfit text-[13px] text-[#111111] transition-opacity duration-300 hover:opacity-50"
+          className="font-outfit text-[14px] md:text-[13px] text-[#111111] transition-opacity duration-300 hover:opacity-50"
           style={{
             fontWeight: 300,
             textDecoration: 'underline',

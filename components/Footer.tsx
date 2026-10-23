@@ -29,7 +29,7 @@ export default function Footer() {
         {/* Middle: Navigation */}
         <div>
           <p
-            className="font-outfit text-[12px] uppercase tracking-[0.12em] mb-4 md:mb-6"
+            className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.12em] mb-4 md:mb-6"
             style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
           >
             Navigacija
@@ -57,7 +57,7 @@ export default function Footer() {
         {/* Right: Contact */}
         <div>
           <p
-            className="font-outfit text-[12px] uppercase tracking-[0.12em] mb-4 md:mb-6"
+            className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.12em] mb-4 md:mb-6"
             style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
           >
             Javi se
@@ -105,13 +105,13 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="max-w-[1440px] mx-auto px-5 md:px-16 pb-8 flex justify-between items-center">
         <p
-          className="font-outfit text-[13px]"
+          className="font-outfit text-[14px] md:text-[13px]"
           style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
         >
           © {new Date().getFullYear()} Sama Svoj Majstor
         </p>
         <p
-          className="font-outfit text-[13px]"
+          className="font-outfit text-[14px] md:text-[13px]"
           style={{ fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
         >
           Sva prava zadržana

@@ -51,7 +51,7 @@ export default function ProjektiPage() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className="font-outfit text-[12px] tracking-[0.06em] px-5 py-3 md:py-2 whitespace-nowrap flex-shrink-0 transition-all duration-300"
+                className="font-outfit text-[14px] md:text-[12px] tracking-[0.06em] px-5 py-3 md:py-2 whitespace-nowrap flex-shrink-0 transition-all duration-300"
                 style={{
                   fontWeight: 300,
                   backgroundColor: activeCategory === cat ? '#111111' : 'transparent',

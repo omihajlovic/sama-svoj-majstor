@@ -97,7 +97,7 @@ export default function UslugePage() {
                   </p>
                   <div className="mb-8">
                     <p
-                      className="font-outfit text-[12px] uppercase tracking-[0.12em] text-[#6e6e6e] mb-4"
+                      className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.12em] text-[#6e6e6e] mb-4"
                       style={{ fontWeight: 300 }}
                     >
                       {service.label}
@@ -121,7 +121,7 @@ export default function UslugePage() {
                 <div className="flex flex-col justify-between">
                   <div>
                     <p
-                      className="font-outfit text-[12px] uppercase tracking-[0.12em] text-[#6e6e6e] mb-3"
+                      className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.12em] text-[#6e6e6e] mb-3"
                       style={{ fontWeight: 300 }}
                     >
                       Cena
@@ -135,7 +135,7 @@ export default function UslugePage() {
                   </div>
                   <Link
                     href="/kontakt"
-                    className="text-center md:inline-block font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111] md:self-start"
+                    className="text-center md:inline-block font-outfit text-[14px] md:text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111] md:self-start"
                     style={{ fontWeight: 300, border: '0.5px solid #111111' }}
                   >
                     {service.cta}

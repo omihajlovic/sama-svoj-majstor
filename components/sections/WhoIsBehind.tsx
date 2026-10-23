@@ -40,7 +40,7 @@ export default function WhoIsBehind() {
 
           <Link
             href="/kontakt"
-            className="text-center md:inline-block font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111] mb-4 md:self-start"
+            className="text-center md:inline-block font-outfit text-[14px] md:text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111] mb-4 md:self-start"
             style={{ fontWeight: 300, border: '0.5px solid #111111' }}
           >
             Pošalji upit

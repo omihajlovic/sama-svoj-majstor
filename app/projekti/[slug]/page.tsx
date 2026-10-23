@@ -27,14 +27,14 @@ export default function SingleProjekatPage({ params }: Props) {
           <div className="flex items-center gap-3 mb-8">
             <Link
               href="/projekti"
-              className="font-outfit text-[12px] text-[#6e6e6e] transition-opacity duration-300 hover:opacity-50"
+              className="font-outfit text-[14px] md:text-[12px] text-[#6e6e6e] py-2 md:py-0 inline-block transition-opacity duration-300 hover:opacity-50"
               style={{ fontWeight: 300 }}
             >
               ← Nazad na projekte
             </Link>
             <span className="text-[#6e6e6e]">·</span>
             <span
-              className="font-outfit text-[12px] text-[#6e6e6e]"
+              className="font-outfit text-[13px] md:text-[12px] text-[#6e6e6e]"
               style={{ fontWeight: 300 }}
             >
               {project.category}
@@ -50,7 +50,7 @@ export default function SingleProjekatPage({ params }: Props) {
 
           <div className="flex gap-8 flex-wrap">
             <div>
-              <p className="font-outfit text-[12px] uppercase tracking-[0.1em] text-[#6e6e6e] mb-1" style={{ fontWeight: 300 }}>
+              <p className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.1em] text-[#6e6e6e] mb-1" style={{ fontWeight: 300 }}>
                 Površina
               </p>
               <p className="font-outfit text-[14px] text-[#111111]" style={{ fontWeight: 300 }}>
@@ -58,7 +58,7 @@ export default function SingleProjekatPage({ params }: Props) {
               </p>
             </div>
             <div>
-              <p className="font-outfit text-[12px] uppercase tracking-[0.1em] text-[#6e6e6e] mb-1" style={{ fontWeight: 300 }}>
+              <p className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.1em] text-[#6e6e6e] mb-1" style={{ fontWeight: 300 }}>
                 Trajanje
               </p>
               <p className="font-outfit text-[14px] text-[#111111]" style={{ fontWeight: 300 }}>
@@ -66,7 +66,7 @@ export default function SingleProjekatPage({ params }: Props) {
               </p>
             </div>
             <div>
-              <p className="font-outfit text-[12px] uppercase tracking-[0.1em] text-[#6e6e6e] mb-1" style={{ fontWeight: 300 }}>
+              <p className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.1em] text-[#6e6e6e] mb-1" style={{ fontWeight: 300 }}>
                 Kategorija
               </p>
               <p className="font-outfit text-[14px] text-[#111111]" style={{ fontWeight: 300 }}>
@@ -162,13 +162,13 @@ export default function SingleProjekatPage({ params }: Props) {
           </p>
           <Link
             href="/kontakt"
-            className="inline-block font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111] mb-4"
+            className="inline-block font-outfit text-[14px] md:text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111] mb-4"
             style={{ fontWeight: 300, border: '0.5px solid #111111' }}
           >
             Pošalji upit
           </Link>
           <p
-            className="font-outfit text-[12px] text-[#6e6e6e] block mt-4"
+            className="font-outfit text-[13px] md:text-[12px] text-[#6e6e6e] block mt-4"
             style={{ fontWeight: 300 }}
           >
             Nakon prijave, javiću ti se sa sledećim koracima
@@ -183,7 +183,7 @@ export default function SingleProjekatPage({ params }: Props) {
           className="block max-w-[1440px] mx-auto px-5 md:px-16 py-10 flex items-center justify-between group transition-opacity duration-300 hover:opacity-50"
         >
           <div>
-            <p className="font-outfit text-[12px] uppercase tracking-[0.12em] text-[#6e6e6e] mb-2" style={{ fontWeight: 300 }}>
+            <p className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.12em] text-[#6e6e6e] mb-2" style={{ fontWeight: 300 }}>
               Sledeći projekat
             </p>
             <p className="font-cormorant text-[#111111] text-[28px]" style={{ fontWeight: 300 }}>

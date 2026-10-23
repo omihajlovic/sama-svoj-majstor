@@ -170,13 +170,13 @@ export default function BeforeAfterSlider({
 
       {/* Labels */}
       <span
-        className="absolute bottom-4 left-4 font-outfit text-[12px] text-white uppercase tracking-[0.12em] z-10 pointer-events-none"
+        className="absolute bottom-4 left-4 font-outfit text-[13px] md:text-[12px] text-white uppercase tracking-[0.12em] z-10 pointer-events-none"
         style={{ fontWeight: 300 }}
       >
         {beforeLabel}
       </span>
       <span
-        className="absolute bottom-4 right-4 font-outfit text-[12px] text-white uppercase tracking-[0.12em] z-10 pointer-events-none"
+        className="absolute bottom-4 right-4 font-outfit text-[13px] md:text-[12px] text-white uppercase tracking-[0.12em] z-10 pointer-events-none"
         style={{ fontWeight: 300 }}
       >
         {afterLabel}
@@ -201,7 +201,7 @@ export default function BeforeAfterSlider({
           }}
           onMouseDown={handleMouseDown}
         >
-          <span className="text-[#111111] text-[12px]">⟷</span>
+          <span className="text-[#111111] text-[13px] md:text-[12px]">⟷</span>
         </div>
       </div>
     </div>

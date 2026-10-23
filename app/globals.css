@@ -162,3 +162,13 @@ body {
 .radio-dot {
   border-radius: 9999px !important;
 }
+
+@media (max-width: 767px) {
+  .form-label,
+  .form-optional {
+    font-size: 13px;
+  }
+  .form-error {
+    font-size: 14px;
+  }
+}

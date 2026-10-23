@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       {/* Info */}
       <div className="pt-4">
         <p
-          className="font-outfit text-[12px] uppercase tracking-[0.12em] text-[#6e6e6e] mb-2"
+          className="font-outfit text-[13px] md:text-[12px] uppercase tracking-[0.12em] text-[#6e6e6e] mb-2"
           style={{ fontWeight: 300 }}
         >
           {project.category}

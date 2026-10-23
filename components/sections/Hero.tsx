@@ -36,14 +36,14 @@ export default function Hero() {
         <div className="flex flex-col md:grid md:grid-cols-2 md:w-max gap-3 md:gap-8">
           <Link
             href="/projekti"
-            className="text-center font-outfit text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111]"
+            className="text-center font-outfit text-[14px] md:text-[13px] tracking-[0.08em] text-white bg-[#111111] px-8 py-4 transition-all duration-300 hover:bg-white hover:text-[#111111]"
             style={{ fontWeight: 300, border: '0.5px solid #111111' }}
           >
             Pogledaj projekte
           </Link>
           <Link
             href="/kontakt"
-            className="text-center font-outfit text-[13px] tracking-[0.08em] text-[#111111] px-8 py-4 transition-all duration-300 hover:bg-[#111111] hover:text-white"
+            className="text-center font-outfit text-[14px] md:text-[13px] tracking-[0.08em] text-[#111111] px-8 py-4 transition-all duration-300 hover:bg-[#111111] hover:text-white"
             style={{ fontWeight: 300, border: '0.5px solid #111111' }}
           >
             Pošalji upit

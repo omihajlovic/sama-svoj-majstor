@@ -19,7 +19,7 @@ export default function BlogSection() {
           </h2>
           <Link
             href="/blog"
-            className="font-outfit text-[12px] text-[#111111] uppercase tracking-[0.08em] transition-opacity duration-300 hover:opacity-50"
+            className="font-outfit text-[13px] md:text-[12px] text-[#111111] uppercase tracking-[0.08em] transition-opacity duration-300 hover:opacity-50"
             style={{ fontWeight: 300 }}
           >
             Vidi sve →
