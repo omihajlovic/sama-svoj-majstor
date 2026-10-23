@@ -42,10 +42,10 @@ const circle = (cx: number, cy: number, r: number) =>
 // Architectural line pictograms, drawn as paths only so pathLength-based stroke animation works everywhere
 const icons: string[][] = [
   ['M4 8h24v16H4z', 'M4 8l12 10 12-10'],
-  ['M3 3h16v16H3z', 'M3 11h7', 'M10 19a5 5 0 0 1 5-5', circle(22, 22, 5), 'M25.5 25.5L29 29'],
+  [circle(13.5, 13.5, 9), 'M20 20l8.5 8.5'],
   [circle(12, 16, 7), circle(20, 16, 7)],
   ['M4 4h11v11H4z', 'M17 4h11v11H17z', 'M4 17h11v11H4z', circle(22.5, 22.5, 5.5)],
-  ['M4 28V4l24 24z', 'M9 23v-7l7 7z', 'M8 28v-3', 'M12 28v-3', 'M16 28v-3', 'M20 28v-3', 'M24 28v-3'],
+  ['M4 28V4l24 24z', 'M9.5 22.5v-7.5l7.5 7.5z'],
   [circle(10, 16, 6), circle(10, 16, 2), 'M16 16h13', 'M24 16v4', 'M28 16v5'],
 ]
 
