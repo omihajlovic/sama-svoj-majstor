@@ -15,14 +15,21 @@ export default function FinalCTA() {
         return
       }
       const rect = sectionRef.current.getBoundingClientRect()
-      // Background moves at 30% of scroll speed → content scrolls faster → parallax
-      const offset = -rect.top * 0.3
-      bgRef.current.style.transform = `translateY(${offset}px)`
+      const vh = window.innerHeight
+      // -1 when the section enters at the bottom, 1 when it leaves at the top;
+      // the shift stays within the 30% overscan of the background so no edge shows on any screen height
+      const progress = Math.max(-1, Math.min(1, (vh / 2 - (rect.top + rect.height / 2)) / (vh / 2 + rect.height / 2)))
+      const offset = progress * rect.height * 0.25
+      bgRef.current.style.transform = `translate3d(0, ${offset}px, 0)`
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })
-    handleScroll() // set initial position
-    return () => window.removeEventListener('scroll', handleScroll)
+    window.addEventListener('resize', handleScroll)
+    handleScroll()
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleScroll)
+    }
   }, [])
 
   return (
